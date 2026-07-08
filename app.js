@@ -1291,12 +1291,179 @@ const animals = [
         description: "Tropical fruit with a thick purple rind enclosing sweet, white segments.",
         isFruit: true
     }
+,
+    {
+        id: "platypus",
+        name: "Platypus",
+        filename: "images/animals/platypus_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Rivers",
+        rarity: "★★★★★",
+        description: "Semi-aquatic egg-laying mammal native to eastern Australia."
+    },
+    {
+        id: "meerkat",
+        name: "Meerkat",
+        filename: "images/animals/meerkat_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Insectivore",
+        habitat: "Deserts",
+        rarity: "★★★☆☆",
+        description: "Small mongooses known for their sentinel behavior of standing on hind legs."
+    },
+    {
+        id: "otter",
+        name: "Otter",
+        filename: "images/animals/otter_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Rivers & Coasts",
+        rarity: "★★★★☆",
+        description: "Playful semi-aquatic mammals known for holding hands while sleeping."
+    },
+    {
+        id: "puffin",
+        name: "Puffin",
+        filename: "images/animals/puffin_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Cliffs & Ocean",
+        rarity: "★★★★☆",
+        description: "Colorfully beaked seabirds that nest in clifftop colonies."
+    },
+    {
+        id: "capybara",
+        name: "Capybara",
+        filename: "images/animals/capybara_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Swamps & Rivers",
+        rarity: "★★★★☆",
+        description: "The largest living rodents in the world, known for their gentle and social nature."
+    },
+    {
+        id: "seal",
+        name: "Seal",
+        filename: "images/animals/seal_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Polar & Coasts",
+        rarity: "★★★☆☆",
+        description: "Sleek marine mammals that are clumsy on land but extremely agile in water."
+    },
+    {
+        id: "swan",
+        name: "Swan",
+        filename: "images/animals/swan_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Lakes & Ponds",
+        rarity: "★★★☆☆",
+        description: "Large, elegant waterfowl famous for their graceful necks and lifelong mating bonds."
+    },
+    {
+        id: "goose",
+        name: "Goose",
+        filename: "images/animals/goose_50x50.png",
+        category: "domestic",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Farms & Ponds",
+        rarity: "★★☆☆☆",
+        description: "Highly territorial waterfowl known for their loud honks and guard-dog behavior."
+    },
+    {
+        id: "donkey",
+        name: "Donkey",
+        filename: "images/animals/donkey_50x50.png",
+        category: "domestic",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Farms & Deserts",
+        rarity: "★★☆☆☆",
+        description: "Sturdy domesticated beasts of burden known for their intelligence and caution."
+    },
+    {
+        id: "goat",
+        name: "Goat",
+        filename: "images/animals/goat_50x50.png",
+        category: "domestic",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Mountains & Farms",
+        rarity: "★★☆☆☆",
+        description: "Sure-footed herbivores famous for their climbing agility and curious eating habits."
+    },
+    {
+        id: "yak",
+        name: "Yak",
+        filename: "images/animals/yak_50x50.png",
+        category: "domestic",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "High Mountains",
+        rarity: "★★★★☆",
+        description: "Long-haired domesticated bovines native to the Himalayan region."
+    },
+    {
+        id: "hamster",
+        name: "Hamster",
+        filename: "images/animals/hamster_50x50.png",
+        category: "domestic",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Grasslands & Homes",
+        rarity: "★☆☆☆☆",
+        description: "Small, burrowing rodents with expandable cheek pouches used to carry food."
+    },
+    {
+        id: "skunk",
+        name: "Skunk",
+        filename: "images/animals/skunk_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Omnivore",
+        habitat: "Forests",
+        rarity: "★★★☆☆",
+        description: "Mammals famous for their ability to spray a liquid with a strong, unpleasant odor."
+    },
+    {
+        id: "peacock",
+        name: "Peacock",
+        filename: "images/animals/peacock_50x50.png",
+        category: "domestic",
+        isPredator: false,
+        diet: "Omnivore",
+        habitat: "Gardens & Forests",
+        rarity: "★★★★☆",
+        description: "Male peafowls renowned for their iridescent blue and green tail plumage."
+    },
+    {
+        id: "crow",
+        name: "Crow",
+        filename: "images/animals/crow_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Omnivore",
+        habitat: "Everywhere",
+        rarity: "★★☆☆☆",
+        description: "Highly intelligent black birds capable of problem-solving and recognizing human faces."
+    }
 ];
 
 // Application State
 let activeFilter = "all";
 let searchQuery = "";
 let cardScale = 2.0; // multiplier (x50px)
+let spriteResolution = "75x75"; // default to deluxe!
 
 // DOM Elements
 const grid = document.getElementById("animal-grid");
@@ -1305,6 +1472,7 @@ const filterBtns = document.querySelectorAll(".filter-btn");
 const speciesCount = document.getElementById("species-count");
 const globalScaleSlider = document.getElementById("global-scale-slider");
 const globalScaleBadge = document.getElementById("global-scale-badge");
+const resolutionSelector = document.getElementById("resolution-selector");
 const themeSelector = document.getElementById("theme-selector");
 const noResultsEl = document.getElementById("no-results-element");
 const clearSearchBtn = document.getElementById("clear-search-btn");
@@ -1345,6 +1513,8 @@ function renderGallery() {
             matchesCategory = (animal.category === "domestic");
         } else if (activeFilter === "predator") {
             matchesCategory = animal.isPredator;
+        } else {
+            matchesCategory = (animal.category === activeFilter);
         }
         
         return matchesSearch && matchesCategory;
@@ -1372,11 +1542,12 @@ function renderGallery() {
         card.setAttribute("aria-label", `View details of ${animal.name}`);
         
         // Dynamic image dimensions
-        const sizePx = 50 * cardScale;
+        const sizePx = (spriteResolution === "75x75" ? 75 : 50) * cardScale;
+        const displaySrc = animal.filename.replace("_50x50.png", `_${spriteResolution}.png`);
         
         card.innerHTML = `
             <div class="card-img-wrapper" style="height: ${sizePx + 40}px">
-                <img src="${animal.filename}" alt="${animal.name}" class="pixelated" style="width: ${sizePx}px; height: ${sizePx}px;">
+                <img src="${displaySrc}" alt="${animal.name}" class="pixelated" style="width: ${sizePx}px; height: ${sizePx}px;">
             </div>
             <span class="card-category">${animal.category}</span>
             <h4>${animal.name}</h4>
@@ -1427,6 +1598,12 @@ globalScaleSlider.addEventListener("input", (e) => {
     renderGallery();
 });
 
+// Resolution Switcher Handler
+resolutionSelector.addEventListener("change", (e) => {
+    spriteResolution = e.target.value;
+    renderGallery();
+});
+
 // Theme Switcher Handler
 themeSelector.addEventListener("change", (e) => {
     const selectedTheme = e.target.value;
@@ -1450,11 +1627,12 @@ function openModal(animal) {
     modalHabitat.textContent = animal.habitat;
     modalRarity.textContent = animal.rarity;
     
-    // Set image path and download link
-    modalImg.src = animal.filename;
+    // Set image path and download link based on resolution
+    const displaySrc = animal.filename.replace("_50x50.png", `_${spriteResolution}.png`);
+    modalImg.src = displaySrc;
     modalImg.alt = `${animal.name} Sprite`;
-    modalDownloadLink.href = animal.filename;
-    modalDownloadLink.setAttribute("download", `${animal.id}_sprite.png`);
+    modalDownloadLink.href = displaySrc;
+    modalDownloadLink.setAttribute("download", `${animal.id}_sprite_${spriteResolution}.png`);
 
     // Reset Zoom slider and display
     zoomSlider.value = 6;
@@ -1555,6 +1733,282 @@ function trapFocus(e) {
     const focusableEls = detailModal.querySelectorAll('button, [href], input, select, textarea, [tabindex="0"]');
     const firstFocusable = focusableEls[0];
     const lastFocusable = focusableEls[focusableEls.length - 1,
+    {
+        id: "alligator",
+        name: "Alligator",
+        filename: "images/animals/alligator_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Swamps",
+        rarity: "★★★☆☆",
+        description: "Large reptilian predators known for their powerful jaws."
+    },
+    {
+        id: "alpaca",
+        name: "Alpaca",
+        filename: "images/animals/alpaca_50x50.png",
+        category: "domestic",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Mountains",
+        rarity: "★★☆☆☆",
+        description: "Fluffy herd animals bred for their soft fleece."
+    },
+    {
+        id: "ant",
+        name: "Ant",
+        filename: "images/animals/ant_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Omnivore",
+        habitat: "Everywhere",
+        rarity: "★☆☆☆☆",
+        description: "Tiny industrious insects that can lift many times their body weight."
+    },
+    {
+        id: "armadillo",
+        name: "Armadillo",
+        filename: "images/animals/armadillo_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Omnivore",
+        habitat: "Deserts",
+        rarity: "★★☆☆☆",
+        description: "Armored mammals that can roll into a ball for defense."
+    },
+    {
+        id: "badger",
+        name: "Badger",
+        filename: "images/animals/badger_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Omnivore",
+        habitat: "Woodlands",
+        rarity: "★★★☆☆",
+        description: "Fierce, burrowing mammals with striking black and white striped faces."
+    },
+    {
+        id: "bison",
+        name: "Bison",
+        filename: "images/animals/bison_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Plains",
+        rarity: "★★★☆☆",
+        description: "Massive herd animals that roam the open prairies."
+    },
+    {
+        id: "camel",
+        name: "Camel",
+        filename: "images/animals/camel_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Deserts",
+        rarity: "★★★☆☆",
+        description: "Desert-dwelling animals adapted to survive without water for long periods."
+    },
+    {
+        id: "chameleon",
+        name: "Chameleon",
+        filename: "images/animals/chameleon_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Insectivore",
+        habitat: "Rainforests",
+        rarity: "★★★★☆",
+        description: "Reptiles famous for their ability to change skin color."
+    },
+    {
+        id: "chimpanzee",
+        name: "Chimpanzee",
+        filename: "images/animals/chimpanzee_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Omnivore",
+        habitat: "Jungles",
+        rarity: "★★★★☆",
+        description: "Highly intelligent apes closely related to humans."
+    },
+    {
+        id: "crocodile",
+        name: "Crocodile",
+        filename: "images/animals/crocodile_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Rivers",
+        rarity: "★★★★☆",
+        description: "Ancient, stealthy predators that lurk in shallow waters."
+    },
+    {
+        id: "emu",
+        name: "Emu",
+        filename: "images/animals/emu_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Omnivore",
+        habitat: "Outback",
+        rarity: "★★★☆☆",
+        description: "Tall, flightless birds known for their incredible running speed."
+    },
+    {
+        id: "falcon",
+        name: "Falcon",
+        filename: "images/animals/falcon_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Mountains",
+        rarity: "★★★★☆",
+        description: "High-speed birds of prey that dive at breakneck speeds."
+    },
+    {
+        id: "flamingo",
+        name: "Flamingo",
+        filename: "images/animals/flamingo_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Omnivore",
+        habitat: "Lakes",
+        rarity: "★★★☆☆",
+        description: "Elegant wading birds with distinctive pink plumage."
+    },
+    {
+        id: "gorilla",
+        name: "Gorilla",
+        filename: "images/animals/gorilla_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Jungles",
+        rarity: "★★★★★",
+        description: "Powerful but gentle giant apes that live in troops."
+    },
+    {
+        id: "hedgehog",
+        name: "Hedgehog",
+        filename: "images/animals/hedgehog_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Insectivore",
+        habitat: "Gardens",
+        rarity: "★★☆☆☆",
+        description: "Small, spiky mammals that roll up into a prickly ball."
+    },
+    {
+        id: "iguana",
+        name: "Iguana",
+        filename: "images/animals/iguana_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Tropics",
+        rarity: "★★★☆☆",
+        description: "Large, sun-loving lizards with a row of spines down their back."
+    },
+    {
+        id: "jaguar",
+        name: "Jaguar",
+        filename: "images/animals/jaguar_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Rainforests",
+        rarity: "★★★★★",
+        description: "Fearsome big cats with stunning rosette patterns."
+    },
+    {
+        id: "lemur",
+        name: "Lemur",
+        filename: "images/animals/lemur_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Madagascar",
+        rarity: "★★★★☆",
+        description: "Agile primates with long, often ringed tails."
+    },
+    {
+        id: "leopard",
+        name: "Leopard",
+        filename: "images/animals/leopard_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Savannas",
+        rarity: "★★★★☆",
+        description: "Stealthy big cats capable of dragging prey up into trees."
+    },
+    {
+        id: "moose",
+        name: "Moose",
+        filename: "images/animals/moose_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Boreal Forests",
+        rarity: "★★★★☆",
+        description: "The largest living species in the deer family, sporting massive antlers."
+    },
+    {
+        id: "ostrich",
+        name: "Ostrich",
+        filename: "images/animals/ostrich_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Savannas",
+        rarity: "★★★☆☆",
+        description: "The world's largest bird, capable of running very fast."
+    },
+    {
+        id: "panther",
+        name: "Panther",
+        filename: "images/animals/panther_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Jungles",
+        rarity: "★★★★★",
+        description: "Melanistic big cats known for their sleek black coats."
+    },
+    {
+        id: "pelican",
+        name: "Pelican",
+        filename: "images/animals/pelican_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Coasts",
+        rarity: "★★★☆☆",
+        description: "Large water birds featuring a distinctive throat pouch."
+    },
+    {
+        id: "sloth",
+        name: "Sloth",
+        filename: "images/animals/sloth_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Rainforests",
+        rarity: "★★★★☆",
+        description: "Extremely slow-moving mammals that spend their lives hanging in trees."
+    },
+    {
+        id: "walrus",
+        name: "Walrus",
+        filename: "images/animals/walrus_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Arctic",
+        rarity: "★★★★☆",
+        description: "Large marine mammals recognized by their prominent tusks and whiskers."
+    }
+,
     {
         id: "alligator",
         name: "Alligator",

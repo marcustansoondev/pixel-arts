@@ -47,6 +47,17 @@ The PNG animal sprites will be located in `images/animals/` and the fruit sprite
 
 ---
 
+## Step 2b: Generate the High-Quality 75x75 Sprites
+
+To generate the upscaled and enhanced 75x75 sprites (featuring drop shadows, light gradients, and optimized 16-color palettes) from the base 50x50 sprites:
+
+Run `generate_75x75_all.py` in the workspace:
+```bash
+python3 generate_75x75_all.py
+```
+
+---
+
 ## Step 3: Run the Web Server
 
 Start a background Python HTTP server on port 8080 to serve the directory:
@@ -59,8 +70,8 @@ Open your browser or Web Preview on port 8080 to view, search, scale, and filter
 
 ## Step 4: Package the Files into a ZIP Archive
 
-Run the following command to compress the HTML page, CSS styles, JavaScript logic, generator scripts, instructions text, and all 137 sprites together:
+Run the following command to compress the HTML page, CSS styles, JavaScript logic, generator scripts, instructions text, and all 137 sprites (both 50x50 and 75x75 versions) together:
 ```bash
-python3 -c "import zipfile, glob; zipf = zipfile.ZipFile('pixel_zoo.zip', 'w'); [zipf.write(f) for f in ['index.html', 'styles.css', 'app.js', 'instructions.txt'] + glob.glob('*.py') + glob.glob('images/animals/*_50x50.png') + glob.glob('images/fruits/*_50x50.png')]; zipf.close()"
+python3 -c "import zipfile, glob; zipf = zipfile.ZipFile('pixel_zoo.zip', 'w'); [zipf.write(f) for f in ['index.html', 'styles.css', 'app.js', 'instructions.txt'] + glob.glob('*.py') + glob.glob('images/animals/*.png') + glob.glob('images/fruits/*.png')]; zipf.close()"
 ```
 This produces `pixel_zoo.zip` which contains the complete museum.
