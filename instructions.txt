@@ -1,6 +1,6 @@
 # Pixel Museum Setup Instructions
 
-This document explains how to reconstruct this interactive Pixel Museum web application gallery from scratch, generate the 85 procedural animal sprites and 52 fruit sprites (totaling 137 items), and host it locally in a new environment or chat session.
+This document explains how to reconstruct this interactive Pixel Museum web application gallery from scratch, generate the 135 procedural animal sprites, 77 fruit sprites, 220 kitchen sprites, and 100 vehicle sprites (totaling 532 items), and host it locally in a new environment or chat session.
 
 ---
 
@@ -20,36 +20,71 @@ If you are rebuilding the frontend code manually:
 
 1. **`index.html`**: Structures the dashboard page layout with a glassmorphic sidebar panel, search/filter bars, a responsive item grid, and a pixel-art details modal containing magnification controls and palette emulation shaders.
 2. **`styles.css`**: Embeds typography, defines dynamic background blur glow orbs, configures custom themes (Midnight Purple, Cyberpunk Neon, Matrix Green, Classic Dark), and implements strict `image-rendering: pixelated;` rules to render retro sprites with crisp block edges.
-3. **`app.js`**: Controls dataset configurations for the 137 items, responsive keyword search, category filters (Wild, Domestic, Predators, Berries, Citrus, Melons, Stone Fruits, Tropical, Pome Fruits), global slider scaling, modal trigger loops, canvas filter application, and accessibility focus trapping.
+3. **`app.js`**: Controls dataset configurations for the 532 items, responsive keyword search, category filters (Animals, Fruits, Kitchen, Vehicles), global slider scaling, modal trigger loops, canvas filter application, and accessibility focus trapping.
 
 ---
 
-## Step 2: Generate the 85 Animal Sprites and 52 Fruit Sprites
+## Step 2: Generate all 532 Sprites
 
-To programmatically generate all 137 retro 50x50 PNG sprites and automatically build the database:
+To programmatically generate all 532 retro 50x50 PNG sprites and automatically build the database:
 
-Run `generate_all.py` in the workspace:
+1. Run `generate_all.py` in the workspace to build the animal and first 52 fruit sprites:
 ```bash
 python3 generate_all.py
 ```
 
-This single command orchestrates the entire pipeline:
-1. Generates 30 base animal sprites.
-2. Overwrites face definitions for base animal species.
-3. Tint-derives 25 animal species.
-4. Appends the 25 derived species to `app.js`.
-5. Appends the 15 additional animal species and generates their sprites.
-6. Overwrites and renders all the high-quality custom side body profiles for animals.
-7. Generates 52 custom fruit sprites in `images/fruits/` and appends their metadata.
-8. Normalizes file paths in `app.js`'s database entries.
+2. Run `generate_fruits2.py` in the workspace to build the additional 25 fruit sprites:
+```bash
+python3 generate_fruits2.py
+```
 
-The PNG animal sprites will be located in `images/animals/` and the fruit sprites in `images/fruits/`.
+3. Run `generate_animals2.py` in the workspace to build the additional 50 animal sprites:
+```bash
+python3 generate_animals2.py
+```
+
+4. Run `generate_kitchen.py` in the workspace to build the first 50 kitchen sprites:
+```bash
+python3 generate_kitchen.py
+```
+
+5. Run `generate_kitchen2.py` in the workspace to build the additional 20 kitchen sprites:
+```bash
+python3 generate_kitchen2.py
+```
+
+6. Run `generate_kitchen3.py` in the workspace to build another 50 kitchen sprites:
+```bash
+python3 generate_kitchen3.py
+```
+
+7. Run `generate_kitchen4.py` in the workspace to build another 50 kitchen sprites:
+```bash
+python3 generate_kitchen4.py
+```
+
+8. Run `generate_kitchen5.py` in the workspace to build another 50 kitchen sprites:
+```bash
+python3 generate_kitchen5.py
+```
+
+9. Run `generate_vehicles.py` in the workspace to build the first 50 vehicle sprites:
+```bash
+python3 generate_vehicles.py
+```
+
+10. Run `generate_vehicles2.py` in the workspace to build the final 50 vehicle sprites:
+```bash
+python3 generate_vehicles2.py
+```
+
+The PNG sprites will be located in `images/animals/`, `images/fruits/`, `images/kitchen/`, and `images/vehicles/`.
 
 ---
 
 ## Step 2b: Generate the High-Quality 75x75 Sprites
 
-To generate the upscaled and enhanced 75x75 sprites (featuring drop shadows, light gradients, and optimized 16-color palettes) from the base 50x50 sprites:
+To generate the upscaled and enhanced 75x75 sprites (featuring drop shadows, light gradients, and optimized 16-color palettes) from the base 50x50 animal/fruit sprites:
 
 Run `generate_75x75_all.py` in the workspace:
 ```bash
@@ -60,14 +95,12 @@ python3 generate_75x75_all.py
 
 ## Step 2c: Generate the Bold Flat 100x100 Sprites
 
-To generate the native 100x100 sprites (featuring vivid layered fills, 10-band vertical gradient shading, thick bold outlines, and palettes limited to 10–25 unique colors):
+To generate the native 100x100 animal/fruit sprites (featuring vivid layered fills, 10-band vertical gradient shading, thick bold outlines, and palettes limited to 10–25 unique colors):
 
 Run `generate_100x100_all.py` in the workspace:
 ```bash
 python3 generate_100x100_all.py
 ```
-
-This generates all 137 sprites completely from scratch at 100x100 resolution — not upscaled from the 50x50 or 75x75 versions. Each sprite is post-processed to enforce a palette of exactly 10–25 distinct non-transparent colors via vertical gradient shading and FASTOCTREE quantization.
 
 ---
 
@@ -77,14 +110,15 @@ Start a background Python HTTP server on port 8080 to serve the directory:
 ```bash
 python3 -m http.server 8080
 ```
-Open your browser or Web Preview on port 8080 to view, search, scale, and filter all 137 items.
+Open your browser or Web Preview on port 8080 to view, search, scale, and filter all 532 items.
 
 ---
 
 ## Step 4: Package the Files into a ZIP Archive
 
-Run the following command to compress the HTML page, CSS styles, JavaScript logic, generator scripts, instructions text, and all 137 sprites (50x50, 75x75, and 100x100 versions) together:
+Run the following command to compress the HTML page, CSS styles, JavaScript logic, generator scripts, instructions text, and all sprites together:
 ```bash
-python3 -c "import zipfile, glob; zipf = zipfile.ZipFile('pixel_zoo.zip', 'w'); [zipf.write(f) for f in ['index.html', 'styles.css', 'app.js', 'instructions.txt'] + glob.glob('*.py') + glob.glob('images/animals/*.png') + glob.glob('images/fruits/*.png')]; zipf.close()"
+python3 -c "import zipfile, glob; zipf = zipfile.ZipFile('pixel_zoo.zip', 'w'); [zipf.write(f) for f in ['index.html', 'styles.css', 'app.js', 'instructions.txt'] + glob.glob('*.py') + glob.glob('images/animals/*.png') + glob.glob('images/fruits/*.png') + glob.glob('images/kitchen/*.png') + glob.glob('images/vehicles/*.png')]; zipf.close()"
 ```
 This produces `pixel_zoo.zip` which contains the complete museum.
+

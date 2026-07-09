@@ -1123,8 +1123,307 @@ const animals = [
         rarity: "★★★★★",
         description: "Tropical fruit with a thick purple rind enclosing sweet, white segments.",
         isFruit: true
-    }
-,
+    },
+    {
+        id: "rambutan",
+        name: "Rambutan",
+        filename: "images/fruits/rambutan_50x50.png",
+        category: "tropical",
+        isPredator: false,
+        diet: "Sweet & Juicy",
+        habitat: "Southeast Asia",
+        rarity: "★★★★★",
+        description: "A bright red, hairy tropical fruit containing sweet, translucent white flesh.",
+        isFruit: true
+    },
+    {
+        id: "breadfruit",
+        name: "Breadfruit",
+        filename: "images/fruits/breadfruit_50x50.png",
+        category: "tropical",
+        isPredator: false,
+        diet: "Starchy & Mild",
+        habitat: "South Pacific",
+        rarity: "★★★★☆",
+        description: "A large green textured fruit with a potato-like flavor when cooked.",
+        isFruit: true
+    },
+    {
+        id: "salak",
+        name: "Snake Fruit",
+        filename: "images/fruits/salak_50x50.png",
+        category: "tropical",
+        isPredator: false,
+        diet: "Sweet & Acidic",
+        habitat: "Indonesia",
+        rarity: "★★★★★",
+        description: "Known for its scaly brown skin resembling snake scales, with dry, crunchy sweet flesh.",
+        isFruit: true
+    },
+    {
+        id: "soursop",
+        name: "Soursop",
+        filename: "images/fruits/soursop_50x50.png",
+        category: "tropical",
+        isPredator: false,
+        diet: "Citrusy & Creamy",
+        habitat: "Tropical Americas",
+        rarity: "★★★★★",
+        description: "A spiky green tropical fruit with white creamy pulp tasting like strawberry and pineapple.",
+        isFruit: true
+    },
+    {
+        id: "custard_apple",
+        name: "Custard Apple",
+        filename: "images/fruits/custard_apple_50x50.png",
+        category: "tropical",
+        isPredator: false,
+        diet: "Sweet & Custard-like",
+        habitat: "West Indies",
+        rarity: "★★★★☆",
+        description: "A green, knobby fruit with sweet, creamy white flesh and large black seeds.",
+        isFruit: true
+    },
+    {
+        id: "longan",
+        name: "Longan",
+        filename: "images/fruits/longan_50x50.png",
+        category: "tropical",
+        isPredator: false,
+        diet: "Sweet & Musky",
+        habitat: "Southern China",
+        rarity: "★★★★☆",
+        description: "A close relative of the lychee, featuring a tan shell and sweet, translucent flesh.",
+        isFruit: true
+    },
+    {
+        id: "medlar",
+        name: "Medlar",
+        filename: "images/fruits/medlar_50x50.png",
+        category: "pome",
+        isPredator: false,
+        diet: "Rich & Apple-sauce-like",
+        habitat: "Southeast Europe",
+        rarity: "★★★★★",
+        description: "An unusual winter fruit eaten when overripe, offering a rich applesauce-like texture.",
+        isFruit: true
+    },
+    {
+        id: "loquat",
+        name: "Loquat",
+        filename: "images/fruits/loquat_50x50.png",
+        category: "stone",
+        isPredator: false,
+        diet: "Sweet & Citrusy",
+        habitat: "China",
+        rarity: "★★★☆☆",
+        description: "Small yellow stone fruits with thin skin and a flavor combining peach, citrus, and mango.",
+        isFruit: true
+    },
+    {
+        id: "bilberry",
+        name: "Bilberry",
+        filename: "images/fruits/bilberry_50x50.png",
+        category: "berry",
+        isPredator: false,
+        diet: "Tart & Fruity",
+        habitat: "Europe",
+        rarity: "★★★★☆",
+        description: "Dark blue wild berries related to blueberries but with dark pulp and a stronger tart flavor.",
+        isFruit: true
+    },
+    {
+        id: "cloudberry",
+        name: "Cloudberry",
+        filename: "images/fruits/cloudberry_50x50.png",
+        category: "berry",
+        isPredator: false,
+        diet: "Tart & Honey-like",
+        habitat: "Arctic Regions",
+        rarity: "★★★★★",
+        description: "Amber-colored wild berries prized in Nordic countries for their tart, honey-like flavor.",
+        isFruit: true
+    },
+    {
+        id: "huckleberry",
+        name: "Huckleberry",
+        filename: "images/fruits/huckleberry_50x50.png",
+        category: "berry",
+        isPredator: false,
+        diet: "Sweet & Tart",
+        habitat: "North America",
+        rarity: "★★★★☆",
+        description: "Small, deep purple berries similar to wild blueberries, offering a bold sweet-tart flavor.",
+        isFruit: true
+    },
+    {
+        id: "lingonberry",
+        name: "Lingonberry",
+        filename: "images/fruits/lingonberry_50x50.png",
+        category: "berry",
+        isPredator: false,
+        diet: "Tart & Acidic",
+        habitat: "Boreal Forests",
+        rarity: "★★★☆☆",
+        description: "Bright red, tart berries commonly harvested in northern forests for jams and sauces.",
+        isFruit: true
+    },
+    {
+        id: "feijoa",
+        name: "Feijoa",
+        filename: "images/fruits/feijoa_50x50.png",
+        category: "tropical",
+        isPredator: false,
+        diet: "Aromatic & Sweet",
+        habitat: "South America",
+        rarity: "★★★★☆",
+        description: "Also known as pineapple guava, this green egg-shaped fruit is highly aromatic and sweet.",
+        isFruit: true
+    },
+    {
+        id: "tamarind",
+        name: "Tamarind",
+        filename: "images/fruits/tamarind_50x50.png",
+        category: "tropical",
+        isPredator: false,
+        diet: "Sour & Sweet",
+        habitat: "Africa",
+        rarity: "★★★☆☆",
+        description: "Brown pod-like fruits containing sour-sweet pulp widely used in cooking and confections.",
+        isFruit: true
+    },
+    {
+        id: "ugli_fruit",
+        name: "Ugli Fruit",
+        filename: "images/fruits/ugli_fruit_50x50.png",
+        category: "citrus",
+        isPredator: false,
+        diet: "Sweet & Tangy",
+        habitat: "Jamaica",
+        rarity: "★★★★☆",
+        description: "A Jamaican tangelo with a rough, wrinkled yellow-green skin and sweet, juicy interior.",
+        isFruit: true
+    },
+    {
+        id: "clementine",
+        name: "Clementine",
+        filename: "images/fruits/clementine_50x50.png",
+        category: "citrus",
+        isPredator: false,
+        diet: "Sweet & Seedless",
+        habitat: "Mediterranean",
+        rarity: "★★★☆☆",
+        description: "A small, sweet hybrid mandarin orange that is virtually seedless and easy to peel.",
+        isFruit: true
+    },
+    {
+        id: "satsuma",
+        name: "Satsuma",
+        filename: "images/fruits/satsuma_50x50.png",
+        category: "citrus",
+        isPredator: false,
+        diet: "Sweet & Juicy",
+        habitat: "Japan",
+        rarity: "★★★☆☆",
+        description: "A seedless citrus variety with loose, easy-to-peel skin and very sweet segments.",
+        isFruit: true
+    },
+    {
+        id: "yuzu",
+        name: "Yuzu",
+        filename: "images/fruits/yuzu_50x50.png",
+        category: "citrus",
+        isPredator: false,
+        diet: "Highly Acidic & Aromatic",
+        habitat: "East Asia",
+        rarity: "★★★★☆",
+        description: "A bumpy yellow citrus fruit prized for its intensely aromatic zest and sour juice.",
+        isFruit: true
+    },
+    {
+        id: "buddhas_hand",
+        name: "Buddha's Hand",
+        filename: "images/fruits/buddhas_hand_50x50.png",
+        category: "citrus",
+        isPredator: false,
+        diet: "Fragrant & Zesty",
+        habitat: "India",
+        rarity: "★★★★★",
+        description: "An unusual citrus fruit with long yellow finger-like segments containing no pulp or juice.",
+        isFruit: true
+    },
+    {
+        id: "rowanberry",
+        name: "Rowanberry",
+        filename: "images/fruits/rowanberry_50x50.png",
+        category: "berry",
+        isPredator: false,
+        diet: "Bitter & Tart",
+        habitat: "Europe",
+        rarity: "★★★☆☆",
+        description: "Small orange-red berries growing in clusters, usually cooked or made into jellies.",
+        isFruit: true
+    },
+    {
+        id: "barberry",
+        name: "Barberry",
+        filename: "images/fruits/barberry_50x50.png",
+        category: "berry",
+        isPredator: false,
+        diet: "Tart & Sour",
+        habitat: "Asia & Europe",
+        rarity: "★★★★☆",
+        description: "Long, bright red berries known for their sharp, sour taste and use in rice dishes.",
+        isFruit: true
+    },
+    {
+        id: "juniper_berry",
+        name: "Juniper Berry",
+        filename: "images/fruits/juniper_berry_50x50.png",
+        category: "berry",
+        isPredator: false,
+        diet: "Piney & Sharp",
+        habitat: "Northern Hemisphere",
+        rarity: "★★★★☆",
+        description: "Female seed cones resembling blue-purple berries, used as a spice for savory dishes.",
+        isFruit: true
+    },
+    {
+        id: "marionberry",
+        name: "Marionberry",
+        filename: "images/fruits/marionberry_50x50.png",
+        category: "berry",
+        isPredator: false,
+        diet: "Sweet & Rich",
+        habitat: "Oregon, USA",
+        rarity: "★★★★☆",
+        description: "A complex blackberry cultivar with a rich, earthy, and sweet-tart flavor profile.",
+        isFruit: true
+    },
+    {
+        id: "physalis",
+        name: "Physalis",
+        filename: "images/fruits/physalis_50x50.png",
+        category: "berry",
+        isPredator: false,
+        diet: "Tangy & Sweet",
+        habitat: "South America",
+        rarity: "★★★★☆",
+        description: "Also called Cape Gooseberry, this yellow-orange berry is wrapped in a papery husk.",
+        isFruit: true
+    },
+    {
+        id: "miracle_fruit",
+        name: "Miracle Fruit",
+        filename: "images/fruits/miracle_fruit_50x50.png",
+        category: "berry",
+        isPredator: false,
+        diet: "Sweet & Mild",
+        habitat: "West Africa",
+        rarity: "★★★★★",
+        description: "A small red berry containing miraculin, making sour foods taste incredibly sweet.",
+        isFruit: true
+    },
     {
         id: "alligator",
         name: "Alligator",
@@ -1556,23 +1855,896 @@ const animals = [
         description: "Male peafowls renowned for their iridescent blue and green tail plumage."
     },
     {
-        id: "crow",
-        name: "Crow",
-        filename: "images/animals/crow_50x50.png",
+        id: "red_panda",
+        name: "Red Panda",
+        filename: "images/animals/red_panda_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Himalayas",
+        rarity: "★★★★★",
+        description: "A small reddish-brown arboreal mammal native to the eastern Himalayas."
+    },
+    {
+        id: "wombat",
+        name: "Wombat",
+        filename: "images/animals/wombat_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Australian Forests",
+        rarity: "★★★★☆",
+        description: "A stocky, burrowing Australian marsupial known for its cube-shaped droppings."
+    },
+    {
+        id: "echidna",
+        name: "Echidna",
+        filename: "images/animals/echidna_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Insectivore",
+        habitat: "Australia & New Guinea",
+        rarity: "★★★★☆",
+        description: "A spiny, egg-laying mammal with a long snout used for eating ants."
+    },
+    {
+        id: "quokka",
+        name: "Quokka",
+        filename: "images/animals/quokka_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Rottnest Island",
+        rarity: "★★★★★",
+        description: "A small wallaby species famous for its happy, smiling facial expression."
+    },
+    {
+        id: "tasmanian_devil",
+        name: "Tasmanian Devil",
+        filename: "images/animals/tasmanian_devil_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Tasmania",
+        rarity: "★★★★★",
+        description: "A carnivorous marsupial known for its black fur, loud screech, and strong bite."
+    },
+    {
+        id: "anteater",
+        name: "Anteater",
+        filename: "images/animals/anteater_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Insectivore",
+        habitat: "Savannas & Forests",
+        rarity: "★★★★☆",
+        description: "A mammal with a long tubular snout and sticky tongue adapted for eating ants."
+    },
+    {
+        id: "pangolin",
+        name: "Pangolin",
+        filename: "images/animals/pangolin_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Insectivore",
+        habitat: "Forests & Grasslands",
+        rarity: "★★★★★",
+        description: "A scaly mammal that rolls into a tight ball when threatened by predators."
+    },
+    {
+        id: "tapir",
+        name: "Tapir",
+        filename: "images/animals/tapir_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Jungle & Swamps",
+        rarity: "★★★★☆",
+        description: "A large herbivorous mammal with a short, flexible prehensile snout."
+    },
+    {
+        id: "okapi",
+        name: "Okapi",
+        filename: "images/animals/okapi_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Congo Rainforest",
+        rarity: "★★★★★",
+        description: "A solitary forest animal with striped legs, closely related to the giraffe."
+    },
+    {
+        id: "hyena",
+        name: "Hyena",
+        filename: "images/animals/hyena_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Savanna & Plains",
+        rarity: "★★★★☆",
+        description: "A highly social carnivore known for its spotted coat and laughing vocalizations."
+    },
+    {
+        id: "mongoose",
+        name: "Mongoose",
+        filename: "images/animals/mongoose_50x50.png",
         category: "wild",
         isPredator: true,
         diet: "Omnivore",
-        habitat: "Everywhere",
+        habitat: "Woodlands & Scrublands",
+        rarity: "★★★★☆",
+        description: "A small, agile carnivore famous for its ability to fight venomous snakes."
+    },
+    {
+        id: "weasel",
+        name: "Weasel",
+        filename: "images/animals/weasel_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Forests & Grasslands",
+        rarity: "★★★☆☆",
+        description: "A slender, active predator with a long body and short legs."
+    },
+    {
+        id: "ferret",
+        name: "Ferret",
+        filename: "images/animals/ferret_50x50.png",
+        category: "domestic",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Domestic",
         rarity: "★★☆☆☆",
-        description: "Highly intelligent black birds capable of problem-solving and recognizing human faces."
+        description: "A domesticated, curious, and playful form of the European polecat."
+    },
+    {
+        id: "mole",
+        name: "Mole",
+        filename: "images/animals/mole_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Insectivore",
+        habitat: "Underground",
+        rarity: "★★★☆☆",
+        description: "A small burrowing mammal with large paws adapted for digging tunnels."
+    },
+    {
+        id: "opossum",
+        name: "Opossum",
+        filename: "images/animals/opossum_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Omnivore",
+        habitat: "Forests & Urban Areas",
+        rarity: "★★☆☆☆",
+        description: "A marsupial native to North America, known for playing dead when threatened."
+    },
+    {
+        id: "bandicoot",
+        name: "Bandicoot",
+        filename: "images/animals/bandicoot_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Omnivore",
+        habitat: "Australian Woodlands",
+        rarity: "★★★★☆",
+        description: "A small marsupial with a long pointed snout, native to Australia."
+    },
+    {
+        id: "porcupine",
+        name: "Porcupine",
+        filename: "images/animals/porcupine_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Forests & Deserts",
+        rarity: "★★★★☆",
+        description: "A large rodent covered in sharp quills that detaches to defend against predators."
+    },
+    {
+        id: "gopher",
+        name: "Gopher",
+        filename: "images/animals/gopher_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Grasslands",
+        rarity: "★★★☆☆",
+        description: "A burrowing rodent known for creating extensive underground tunnel networks."
+    },
+    {
+        id: "groundhog",
+        name: "Groundhog",
+        filename: "images/animals/groundhog_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Fields & Woodlands",
+        rarity: "★★★☆☆",
+        description: "Also known as a woodchuck, a large ground squirrel species that hibernates."
+    },
+    {
+        id: "chipmunk",
+        name: "Chipmunk",
+        filename: "images/animals/chipmunk_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Omnivore",
+        habitat: "Forests & Parks",
+        rarity: "★★★☆☆",
+        description: "A small striped ground squirrel known for storing nuts in its cheek pouches."
+    },
+    {
+        id: "prairie_dog",
+        name: "Prairie Dog",
+        filename: "images/animals/prairie_dog_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Grasslands",
+        rarity: "★★★☆☆",
+        description: "A burrowing rodent that lives in large underground colonies called towns."
+    },
+    {
+        id: "narwhal",
+        name: "Narwhal",
+        filename: "images/animals/narwhal_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Arctic Ocean",
+        rarity: "★★★★★",
+        description: "An Arctic whale famous for the long, spiral tusk protruding from its head."
+    },
+    {
+        id: "manatee",
+        name: "Manatee",
+        filename: "images/animals/manatee_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Warm Coastal Waters",
+        rarity: "★★★★☆",
+        description: "A gentle, slow-moving marine mammal often called a sea cow."
+    },
+    {
+        id: "dugong",
+        name: "Dugong",
+        filename: "images/animals/dugong_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Warm Coastal Waters",
+        rarity: "★★★★★",
+        description: "A strictly marine herbivore related to the manatee, with a fluked tail."
+    },
+    {
+        id: "sea_lion",
+        name: "Sea Lion",
+        filename: "images/animals/sea_lion_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Coastal Waters",
+        rarity: "★★★★☆",
+        description: "An eared seal species capable of walking on all fours using its flippers."
+    },
+    {
+        id: "orca",
+        name: "Orca",
+        filename: "images/animals/orca_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Oceans",
+        rarity: "★★★★★",
+        description: "Also known as the killer whale, a highly intelligent apex predator whale."
+    },
+    {
+        id: "beluga",
+        name: "Beluga Whale",
+        filename: "images/animals/beluga_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Arctic Waters",
+        rarity: "★★★★★",
+        description: "An all-white Arctic whale known for its bulbous forehead and vocal nature."
+    },
+    {
+        id: "manta_ray",
+        name: "Manta Ray",
+        filename: "images/animals/manta_ray_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Planktivore",
+        habitat: "Tropical Oceans",
+        rarity: "★★★★★",
+        description: "A giant ray with large triangular pectoral fins and horn-like mouth lobes."
+    },
+    {
+        id: "stingray",
+        name: "Stingray",
+        filename: "images/animals/stingray_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Coastal Ocean Floor",
+        rarity: "★★★★☆",
+        description: "A flat cartilaginous fish with a long venomous barb on its tail whip."
+    },
+    {
+        id: "seahorse",
+        name: "Seahorse",
+        filename: "images/animals/seahorse_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Seagrass Beds",
+        rarity: "★★★★☆",
+        description: "A small fish species with a horse-like head and prehensile tail."
+    },
+    {
+        id: "jellyfish",
+        name: "Jellyfish",
+        filename: "images/animals/jellyfish_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Oceans",
+        rarity: "★★★☆☆",
+        description: "A gelatinous sea creature with stinging tentacles floating in the current."
+    },
+    {
+        id: "starfish",
+        name: "Starfish",
+        filename: "images/animals/starfish_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Tide Pools & Reefs",
+        rarity: "★★★☆☆",
+        description: "A star-shaped echinoderm that crawls on the ocean floor using tube feet."
+    },
+    {
+        id: "lobster",
+        name: "Lobster",
+        filename: "images/animals/lobster_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Omnivore",
+        habitat: "Rocky Ocean Bottoms",
+        rarity: "★★★★☆",
+        description: "A bottom-dwelling marine crustacean with large powerful claws."
+    },
+    {
+        id: "shrimp",
+        name: "Shrimp",
+        filename: "images/animals/shrimp_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Omnivore",
+        habitat: "Oceans & Rivers",
+        rarity: "★★☆☆☆",
+        description: "A small swimming crustacean with long antennae and a semi-translucent body."
+    },
+    {
+        id: "squid",
+        name: "Squid",
+        filename: "images/animals/squid_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Deep Ocean",
+        rarity: "★★★★☆",
+        description: "A fast-swimming mollusk with ten tentacles and an arrow-shaped head."
+    },
+    {
+        id: "cuttlefish",
+        name: "Cuttlefish",
+        filename: "images/animals/cuttlefish_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Reefs & Shallows",
+        rarity: "★★★★★",
+        description: "A relative of the octopus, famous for its color-changing camouflage abilities."
+    },
+    {
+        id: "eel",
+        name: "Eel",
+        filename: "images/animals/eel_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Reefs & Rivers",
+        rarity: "★★★☆☆",
+        description: "An elongated fish resembling a snake, crawling through rocky crevasses."
+    },
+    {
+        id: "gecko",
+        name: "Gecko",
+        filename: "images/animals/gecko_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Insectivore",
+        habitat: "Warm Regions",
+        rarity: "★★★☆☆",
+        description: "A small lizard known for sticky toe pads that allow it to walk on walls."
+    },
+    {
+        id: "komodo_dragon",
+        name: "Komodo Dragon",
+        filename: "images/animals/komodo_dragon_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Indonesian Islands",
+        rarity: "★★★★★",
+        description: "The largest living species of lizard, featuring a venomous bite."
+    },
+    {
+        id: "salamander",
+        name: "Salamander",
+        filename: "images/animals/salamander_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Insectivore",
+        habitat: "Damp Woodlands",
+        rarity: "★★★★☆",
+        description: "An amphibian resembling a lizard, usually with shiny black and yellow skin."
+    },
+    {
+        id: "toad",
+        name: "Toad",
+        filename: "images/animals/toad_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Insectivore",
+        habitat: "Gardens & Forests",
+        rarity: "★★☆☆☆",
+        description: "A warty-skinned amphibian that lives mostly on dry land."
+    },
+    {
+        id: "scorpion",
+        name: "Scorpion",
+        filename: "images/animals/scorpion_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Deserts & Forests",
+        rarity: "★★★★☆",
+        description: "An arachnid with pincers and a curved tail tipped with a venomous stinger."
+    },
+    {
+        id: "centipede",
+        name: "Centipede",
+        filename: "images/animals/centipede_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Carnivore",
+        habitat: "Soil & Leaf Litter",
+        rarity: "★★★☆☆",
+        description: "A fast, predatory arthropod with one pair of legs per body segment."
+    },
+    {
+        id: "snail",
+        name: "Snail",
+        filename: "images/animals/snail_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Gardens & Damp Places",
+        rarity: "★★☆☆☆",
+        description: "A slow-moving mollusk that carries a hard coiled shell on its back."
+    },
+    {
+        id: "ladybug",
+        name: "Ladybug",
+        filename: "images/animals/ladybug_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Insectivore",
+        habitat: "Gardens & Fields",
+        rarity: "★★☆☆☆",
+        description: "A small red dome-shaped beetle with black spots, beneficial for pest control."
+    },
+    {
+        id: "dragonfly",
+        name: "Dragonfly",
+        filename: "images/animals/dragonfly_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Insectivore",
+        habitat: "Ponds & Wetlands",
+        rarity: "★★★☆☆",
+        description: "A fast-flying insect with large eyes and two pairs of transparent wings."
+    },
+    {
+        id: "grasshopper",
+        name: "Grasshopper",
+        filename: "images/animals/grasshopper_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Meadows & Fields",
+        rarity: "★★☆☆☆",
+        description: "A plant-eating insect with powerful hind legs adapted for jumping."
+    },
+    {
+        id: "mantis",
+        name: "Praying Mantis",
+        filename: "images/animals/mantis_50x50.png",
+        category: "wild",
+        isPredator: true,
+        diet: "Insectivore",
+        habitat: "Gardens & Shrubs",
+        rarity: "★★★★☆",
+        description: "A predatory insect known for holding its front legs in a praying position."
+    },
+    {
+        id: "beetle",
+        name: "Scarab Beetle",
+        filename: "images/animals/beetle_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Herbivore",
+        habitat: "Grasslands",
+        rarity: "★★★☆☆",
+        description: "A shiny green beetle family representing one of the largest insect groups."
+    },
+    {
+        id: "firefly",
+        name: "Firefly",
+        filename: "images/animals/firefly_50x50.png",
+        category: "wild",
+        isPredator: false,
+        diet: "Omnivore",
+        habitat: "Wetlands & Forests",
+        rarity: "★★★★☆",
+        description: "An insect famous for bioluminescent tail segments that glow in the dark."
     }
 ];
+
+// ─── Kitchen Items Dataset ───────────────────────────────────────────────────
+const kitchen = [
+    { id: "pot", name: "Pot", filename: "images/kitchen/pot_50x50.png", category: "kitchen", type: "Cookware", material: "Stainless Steel", rarity: "★★★☆☆", description: "A versatile stainless steel cooking pot used for boiling, simmering soups, stews and pasta." },
+    { id: "pan", name: "Frying Pan", filename: "images/kitchen/pan_50x50.png", category: "kitchen", type: "Cookware", material: "Cast Iron", rarity: "★★★☆☆", description: "A flat-bottomed pan ideal for frying, searing and sautéing over high heat." },
+    { id: "knife", name: "Chef's Knife", filename: "images/kitchen/knife_50x50.png", category: "kitchen", type: "Cutlery", material: "Steel + Wood", rarity: "★★★★☆", description: "An all-purpose kitchen knife used for chopping, slicing and dicing ingredients." },
+    { id: "fork", name: "Fork", filename: "images/kitchen/fork_50x50.png", category: "kitchen", type: "Cutlery", material: "Stainless Steel", rarity: "★★☆☆☆", description: "A four-tined dining utensil used for spearing and picking up food." },
+    { id: "spoon", name: "Spoon", filename: "images/kitchen/spoon_50x50.png", category: "kitchen", type: "Cutlery", material: "Stainless Steel", rarity: "★★☆☆☆", description: "A classic oval-bowled spoon for scooping liquids, soups and soft foods." },
+    { id: "mug", name: "Mug", filename: "images/kitchen/mug_50x50.png", category: "kitchen", type: "Drinkware", material: "Ceramic", rarity: "★★☆☆☆", description: "A large handled cup perfect for hot drinks like coffee, tea and hot chocolate." },
+    { id: "bowl", name: "Bowl", filename: "images/kitchen/bowl_50x50.png", category: "kitchen", type: "Serveware", material: "Ceramic", rarity: "★★☆☆☆", description: "A round open vessel used for serving soups, cereal and salads." },
+    { id: "plate", name: "Plate", filename: "images/kitchen/plate_50x50.png", category: "kitchen", type: "Serveware", material: "Ceramic", rarity: "★★☆☆☆", description: "A flat serving dish used as the base of every meal setting." },
+    { id: "kettle", name: "Kettle", filename: "images/kitchen/kettle_50x50.png", category: "kitchen", type: "Appliance", material: "Steel", rarity: "★★★☆☆", description: "A stovetop kettle for boiling water quickly for tea, coffee and instant noodles." },
+    { id: "rolling_pin", name: "Rolling Pin", filename: "images/kitchen/rolling_pin_50x50.png", category: "kitchen", type: "Bakeware", material: "Wood", rarity: "★★★☆☆", description: "A cylindrical tool used for rolling and flattening dough when baking." },
+    { id: "whisk", name: "Whisk", filename: "images/kitchen/whisk_50x50.png", category: "kitchen", type: "Utensil", material: "Stainless Steel", rarity: "★★★☆☆", description: "A balloon whisk for beating eggs, cream and mixing batters with air." },
+    { id: "cutting_board", name: "Cutting Board", filename: "images/kitchen/cutting_board_50x50.png", category: "kitchen", type: "Prep", material: "Wood", rarity: "★★★☆☆", description: "A sturdy wooden board providing a safe surface for chopping vegetables and meat." },
+    { id: "grater", name: "Grater", filename: "images/kitchen/grater_50x50.png", category: "kitchen", type: "Utensil", material: "Stainless Steel", rarity: "★★★☆☆", description: "A box grater for shredding cheese, vegetables and citrus zest with ease." },
+    { id: "oven_mitt", name: "Oven Mitt", filename: "images/kitchen/oven_mitt_50x50.png", category: "kitchen", type: "Safety", material: "Cotton", rarity: "★★☆☆☆", description: "An insulated glove that protects hands when handling hot pots and baking trays." },
+    { id: "timer", name: "Kitchen Timer", filename: "images/kitchen/timer_50x50.png", category: "kitchen", type: "Tool", material: "Plastic", rarity: "★★★☆☆", description: "A mechanical countdown timer to track cooking times and avoid burnt meals." },
+    { id: "spatula", name: "Spatula", filename: "images/kitchen/spatula_50x50.png", category: "kitchen", type: "Utensil", material: "Steel + Wood", rarity: "★★★☆☆", description: "A broad flat blade for flipping pancakes, burgers and sautéed vegetables." },
+    { id: "colander", name: "Colander", filename: "images/kitchen/colander_50x50.png", category: "kitchen", type: "Prep", material: "Stainless Steel", rarity: "★★★☆☆", description: "A perforated bowl for draining pasta, washing produce and straining liquids." },
+    { id: "ladle", name: "Ladle", filename: "images/kitchen/ladle_50x50.png", category: "kitchen", type: "Utensil", material: "Stainless Steel", rarity: "★★★☆☆", description: "A deep-bowled long-handled spoon for serving soups, stews and sauces." },
+    { id: "toaster", name: "Toaster", filename: "images/kitchen/toaster_50x50.png", category: "kitchen", type: "Appliance", material: "Steel", rarity: "★★★☆☆", description: "A compact electric appliance for toasting bread slices to golden perfection." },
+    { id: "blender", name: "Blender", filename: "images/kitchen/blender_50x50.png", category: "kitchen", type: "Appliance", material: "Plastic + Steel", rarity: "★★★★☆", description: "A countertop blender for creating smoothies, soups, sauces and crushed ice drinks." },
+    { id: "pot_lid", name: "Pot Lid", filename: "images/kitchen/pot_lid_50x50.png", category: "kitchen", type: "Cookware", material: "Stainless Steel", rarity: "★★☆☆☆", description: "A tight-fitting lid that traps steam to cook food faster and retain moisture." },
+    { id: "wooden_spoon", name: "Wooden Spoon", filename: "images/kitchen/wooden_spoon_50x50.png", category: "kitchen", type: "Utensil", material: "Wood", rarity: "★★☆☆☆", description: "A gentle non-scratch stirring spoon ideal for non-stick pots and jams." },
+    { id: "cheese_grater", name: "Cheese Grater", filename: "images/kitchen/cheese_grater_50x50.png", category: "kitchen", type: "Utensil", material: "Stainless Steel", rarity: "★★★☆☆", description: "A pyramid-style grater with sharp rasps perfectly sized for hard cheeses." },
+    { id: "tongs", name: "Tongs", filename: "images/kitchen/tongs_50x50.png", category: "kitchen", type: "Utensil", material: "Stainless Steel", rarity: "★★★☆☆", description: "Spring-loaded tongs for safely gripping hot meats, pasta and salad ingredients." },
+    { id: "measuring_cup", name: "Measuring Cup", filename: "images/kitchen/measuring_cup_50x50.png", category: "kitchen", type: "Bakeware", material: "Glass", rarity: "★★★☆☆", description: "A clear glass measuring cup for accurately portioning liquids and ingredients." },
+    { id: "salt_shaker", name: "Salt Shaker", filename: "images/kitchen/salt_shaker_50x50.png", category: "kitchen", type: "Condiment", material: "Glass", rarity: "★★☆☆☆", description: "A classic salt shaker for seasoning food at the table with a precise sprinkle." },
+    { id: "pepper_shaker", name: "Pepper Shaker", filename: "images/kitchen/pepper_shaker_50x50.png", category: "kitchen", type: "Condiment", material: "Glass", rarity: "★★☆☆☆", description: "A matching pepper shaker that pairs with the salt shaker as a table staple." },
+    { id: "wine_glass", name: "Wine Glass", filename: "images/kitchen/wine_glass_50x50.png", category: "kitchen", type: "Drinkware", material: "Glass", rarity: "★★★☆☆", description: "An elegant stemmed glass designed to aerate and enhance the flavour of wine." },
+    { id: "glass", name: "Tumbler", filename: "images/kitchen/glass_50x50.png", category: "kitchen", type: "Drinkware", material: "Glass", rarity: "★★☆☆☆", description: "A sturdy straight-sided tumbler for water, juice and cold beverages over ice." },
+    { id: "cheese", name: "Cheese Block", filename: "images/kitchen/cheese_50x50.png", category: "kitchen", type: "Food", material: "Dairy", rarity: "★★★☆☆", description: "A yellow wedge of aged cheese with distinctive holes — a kitchen pantry staple." },
+    { id: "bread", name: "Bread Loaf", filename: "images/kitchen/bread_50x50.png", category: "kitchen", type: "Food", material: "Wheat", rarity: "★★☆☆☆", description: "A freshly baked loaf of bread with a golden-brown crust and soft interior." },
+    { id: "dough", name: "Dough", filename: "images/kitchen/dough_50x50.png", category: "kitchen", type: "Food", material: "Flour", rarity: "★★☆☆☆", description: "A flat round of lightly floured dough ready to be rolled, cut and baked." },
+    { id: "apron", name: "Apron", filename: "images/kitchen/apron_50x50.png", category: "kitchen", type: "Safety", material: "Cotton", rarity: "★★☆☆☆", description: "A kitchen apron that keeps clothes clean while cooking and protects against splashes." },
+    { id: "strainer", name: "Strainer", filename: "images/kitchen/strainer_50x50.png", category: "kitchen", type: "Prep", material: "Stainless Steel", rarity: "★★★☆☆", description: "A fine-mesh strainer for sifting flour, straining stocks and rinsing small grains." },
+    { id: "mortar_pestle", name: "Mortar & Pestle", filename: "images/kitchen/mortar_pestle_50x50.png", category: "kitchen", type: "Prep", material: "Stone", rarity: "★★★★☆", description: "An ancient grinding tool for crushing spices, herbs and garlic into fine pastes." },
+    { id: "garlic_press", name: "Garlic Press", filename: "images/kitchen/garlic_press_50x50.png", category: "kitchen", type: "Utensil", material: "Steel", rarity: "★★★☆☆", description: "A hinged press that minces garlic cloves quickly without the need for a knife." },
+    { id: "bottle_opener", name: "Bottle Opener", filename: "images/kitchen/bottle_opener_50x50.png", category: "kitchen", type: "Tool", material: "Steel", rarity: "★★☆☆☆", description: "A dual-purpose opener for popping bottle caps and uncorking wine bottles." },
+    { id: "can_opener", name: "Can Opener", filename: "images/kitchen/can_opener_50x50.png", category: "kitchen", type: "Tool", material: "Steel", rarity: "★★★☆☆", description: "A manual rotary can opener with a serrated cutting wheel for opening tins safely." },
+    { id: "sponge", name: "Kitchen Sponge", filename: "images/kitchen/sponge_50x50.png", category: "kitchen", type: "Cleaning", material: "Foam", rarity: "★☆☆☆☆", description: "A soft absorbent sponge for washing up dishes, pots and surfaces with soapy water." },
+    { id: "dish_rack", name: "Dish Rack", filename: "images/kitchen/dish_rack_50x50.png", category: "kitchen", type: "Cleaning", material: "Steel", rarity: "★★☆☆☆", description: "A wire drying rack that holds plates, bowls and glasses upright to air-dry." },
+    { id: "cookbook", name: "Cookbook", filename: "images/kitchen/cookbook_50x50.png", category: "kitchen", type: "Tool", material: "Paper", rarity: "★★★☆☆", description: "A recipe book packed with culinary inspiration and step-by-step cooking guides." },
+    { id: "sugar_jar", name: "Sugar Jar", filename: "images/kitchen/sugar_jar_50x50.png", category: "kitchen", type: "Storage", material: "Glass", rarity: "★★☆☆☆", description: "A sealed glass jar for storing sugar, keeping it fresh and dry on the counter." },
+    { id: "coffee_pot", name: "Coffee Pot", filename: "images/kitchen/coffee_pot_50x50.png", category: "kitchen", type: "Appliance", material: "Steel", rarity: "★★★☆☆", description: "A stovetop coffee pot for brewing rich, aromatic coffee the old-fashioned way." },
+    { id: "peeler", name: "Peeler", filename: "images/kitchen/peeler_50x50.png", category: "kitchen", type: "Utensil", material: "Steel + Plastic", rarity: "★★★☆☆", description: "A Y-shaped vegetable peeler for quickly removing skins from carrots, potatoes and apples." },
+    { id: "mixing_bowl", name: "Mixing Bowl", filename: "images/kitchen/mixing_bowl_50x50.png", category: "kitchen", type: "Bakeware", material: "Ceramic", rarity: "★★★☆☆", description: "A large deep bowl for mixing dough, batters, salads and marinated ingredients." },
+    { id: "bread_knife", name: "Bread Knife", filename: "images/kitchen/bread_knife_50x50.png", category: "kitchen", type: "Cutlery", material: "Steel + Wood", rarity: "★★★☆☆", description: "A long serrated knife designed to cleanly slice through crusty bread and soft cakes." },
+    { id: "trivet", name: "Trivet", filename: "images/kitchen/trivet_50x50.png", category: "kitchen", type: "Safety", material: "Wood", rarity: "★★☆☆☆", description: "A hexagonal trivet that protects countertops from hot pots and pans." },
+    { id: "plate_cover", name: "Plate Cover", filename: "images/kitchen/plate_cover_50x50.png", category: "kitchen", type: "Serveware", material: "Steel", rarity: "★★★☆☆", description: "A polished domed cover for keeping plated food warm and presentation-ready." },
+    { id: "juicer", name: "Juicer", filename: "images/kitchen/juicer_50x50.png", category: "kitchen", type: "Appliance", material: "Plastic + Steel", rarity: "★★★☆☆", description: "A citrus juicer for extracting fresh juice from oranges, lemons and limes." },
+    { id: "chopsticks", name: "Chopsticks", filename: "images/kitchen/chopsticks_50x50.png", category: "kitchen", type: "Cutlery", material: "Bamboo", rarity: "★★★☆☆", description: "Traditional East Asian eating utensils used for picking up food with precision." },
+    { id: "wok", name: "Wok", filename: "images/kitchen/wok_50x50.png", category: "kitchen", type: "Cookware", material: "Carbon Steel", rarity: "★★★★☆", description: "A round-bottomed wok for stir-frying at high heat, a staple of Asian cooking." },
+    { id: "waffle_iron", name: "Waffle Iron", filename: "images/kitchen/waffle_iron_50x50.png", category: "kitchen", type: "Appliance", material: "Cast Iron", rarity: "★★★☆☆", description: "A hinged iron press that cooks batter into crisp golden waffles with a grid pattern." },
+    { id: "ice_cream_scoop", name: "Ice Cream Scoop", filename: "images/kitchen/ice_cream_scoop_50x50.png", category: "kitchen", type: "Utensil", material: "Stainless Steel", rarity: "★★★☆☆", description: "A spring-loaded scoop for portioning perfect balls of ice cream and sorbet." },
+    { id: "pizza_cutter", name: "Pizza Cutter", filename: "images/kitchen/pizza_cutter_50x50.png", category: "kitchen", type: "Cutlery", material: "Steel + Plastic", rarity: "★★★☆☆", description: "A rotating wheel blade for slicing pizzas and flatbreads cleanly in one roll." },
+    { id: "meat_tenderizer", name: "Meat Tenderizer", filename: "images/kitchen/meat_tenderizer_50x50.png", category: "kitchen", type: "Utensil", material: "Steel + Wood", rarity: "★★★☆☆", description: "A mallet with a spiked face for pounding and tenderizing tough cuts of meat." },
+    { id: "kitchen_scale", name: "Kitchen Scale", filename: "images/kitchen/kitchen_scale_50x50.png", category: "kitchen", type: "Tool", material: "Plastic + Steel", rarity: "★★★★☆", description: "A digital kitchen scale for precisely weighing ingredients when baking." },
+    { id: "slotted_spoon", name: "Slotted Spoon", filename: "images/kitchen/slotted_spoon_50x50.png", category: "kitchen", type: "Utensil", material: "Stainless Steel", rarity: "★★★☆☆", description: "A spoon with drainage holes for lifting solid foods out of boiling liquid." },
+    { id: "pastry_brush", name: "Pastry Brush", filename: "images/kitchen/pastry_brush_50x50.png", category: "kitchen", type: "Bakeware", material: "Wood + Bristle", rarity: "★★☆☆☆", description: "A soft-bristled brush for glazing pastries, basting meats and buttering pans." },
+    { id: "melon_baller", name: "Melon Baller", filename: "images/kitchen/melon_baller_50x50.png", category: "kitchen", type: "Utensil", material: "Stainless Steel", rarity: "★★☆☆☆", description: "A small hemispherical scoop for carving decorative fruit balls from melons." },
+    { id: "zester", name: "Zester", filename: "images/kitchen/zester_50x50.png", category: "kitchen", type: "Utensil", material: "Steel + Plastic", rarity: "★★★☆☆", description: "A fine-toothed grater for scraping citrus zest and grating hard spices like nutmeg." },
+    { id: "mandoline_slicer", name: "Mandoline Slicer", filename: "images/kitchen/mandoline_slicer_50x50.png", category: "kitchen", type: "Prep", material: "Steel + Plastic", rarity: "★★★★☆", description: "An angled slicing board with an ultra-sharp blade for razor-thin uniform cuts." },
+    { id: "stockpot", name: "Stockpot", filename: "images/kitchen/stockpot_50x50.png", category: "kitchen", type: "Cookware", material: "Stainless Steel", rarity: "★★★☆☆", description: "A tall large-capacity pot for making stocks, broths, soups and boiling lobster." },
+    { id: "skillet", name: "Cast Iron Skillet", filename: "images/kitchen/skillet_50x50.png", category: "kitchen", type: "Cookware", material: "Cast Iron", rarity: "★★★★☆", description: "A heavy cast iron skillet that retains heat perfectly for searing and baking." },
+    { id: "dutch_oven", name: "Dutch Oven", filename: "images/kitchen/dutch_oven_50x50.png", category: "kitchen", type: "Cookware", material: "Enameled Cast Iron", rarity: "★★★★★", description: "A heavy enameled pot ideal for slow braises, roasts and baking artisan bread." },
+    { id: "salad_spinner", name: "Salad Spinner", filename: "images/kitchen/salad_spinner_50x50.png", category: "kitchen", type: "Prep", material: "Plastic", rarity: "★★★☆☆", description: "A pump-driven spinner that uses centrifugal force to dry freshly washed salad greens." },
+    { id: "egg_cup", name: "Egg Cup", filename: "images/kitchen/egg_cup_50x50.png", category: "kitchen", type: "Serveware", material: "Ceramic", rarity: "★★☆☆☆", description: "A small cup that holds a soft-boiled egg upright for easy dipping with toast soldiers." },
+    { id: "butter_dish", name: "Butter Dish", filename: "images/kitchen/butter_dish_50x50.png", category: "kitchen", type: "Storage", material: "Glass", rarity: "★★☆☆☆", description: "A covered glass dish that keeps a block of butter fresh and spreadable on the counter." },
+    { id: "bread_box", name: "Bread Box", filename: "images/kitchen/bread_box_50x50.png", category: "kitchen", type: "Storage", material: "Wood", rarity: "★★★☆☆", description: "A ventilated wooden box that keeps bread fresh longer by regulating humidity." },
+    { id: "spice_rack", name: "Spice Rack", filename: "images/kitchen/spice_rack_50x50.png", category: "kitchen", type: "Storage", material: "Wood + Glass", rarity: "★★★☆☆", description: "A wall-mounted rack holding rows of labelled spice jars for quick access while cooking." },
+    { id: "kitchen_towel", name: "Kitchen Towel", filename: "images/kitchen/kitchen_towel_50x50.png", category: "kitchen", type: "Cleaning", material: "Cotton", rarity: "★☆☆☆☆", description: "A striped cotton towel for drying hands, wiping surfaces and handling hot dishes." },
+    { id: "microwave", name: "Microwave Oven", filename: "images/kitchen/microwave_50x50.png", category: "kitchen", type: "Appliance", material: "Steel + Glass", rarity: "★★★☆☆", description: "An electric oven that heats and cooks food by exposing it to electromagnetic radiation." },
+    { id: "coffee_maker", name: "Coffee Maker", filename: "images/kitchen/coffee_maker_50x50.png", category: "kitchen", type: "Appliance", material: "Plastic + Glass", rarity: "★★★☆☆", description: "A drip coffee maker that brews hot coffee automatically into a glass carafe." },
+    { id: "espresso_machine", name: "Espresso Machine", filename: "images/kitchen/espresso_machine_50x50.png", category: "kitchen", type: "Appliance", material: "Stainless Steel", rarity: "★★★★★", description: "A high-pressure machine that brews concentrated espresso coffee." },
+    { id: "tea_infuser", name: "Tea Infuser", filename: "images/kitchen/tea_infuser_50x50.png", category: "kitchen", type: "Utensil", material: "Stainless Steel", rarity: "★★☆☆☆", description: "A perforated metal ball for steeping loose tea leaves in a cup of hot water." },
+    { id: "garbage_can", name: "Trash Can", filename: "images/kitchen/garbage_can_50x50.png", category: "kitchen", type: "Storage", material: "Steel + Plastic", rarity: "★★☆☆☆", description: "A step-pedal trash can for disposing of kitchen waste cleanly." },
+    { id: "paper_towel_holder", name: "Paper Towel Holder", filename: "images/kitchen/paper_towel_holder_50x50.png", category: "kitchen", type: "Storage", material: "Wood", rarity: "★★☆☆☆", description: "A standing wooden holder for keeping a roll of paper towels handy on the counter." },
+    { id: "dish_soap", name: "Dish Soap", filename: "images/kitchen/dish_soap_50x50.png", category: "kitchen", type: "Cleaning", material: "Plastic", rarity: "★☆☆☆☆", description: "A bottle of liquid dishwashing soap for cleaning plates, cups, and pans." },
+    { id: "steel_wool", name: "Steel Wool Pad", filename: "images/kitchen/steel_wool_50x50.png", category: "kitchen", type: "Cleaning", material: "Steel", rarity: "★☆☆☆☆", description: "A wire sponge scrubber for scouring tough grease and burnt food off pots." },
+    { id: "funnel", name: "Kitchen Funnel", filename: "images/kitchen/funnel_50x50.png", category: "kitchen", type: "Utensil", material: "Plastic", rarity: "★★☆☆☆", description: "A wide-mouthed cone funnel for transferring liquids into narrow jars." },
+    { id: "ice_cube_tray", name: "Ice Cube Tray", filename: "images/kitchen/ice_cube_tray_50x50.png", category: "kitchen", type: "Storage", material: "Plastic", rarity: "★★☆☆☆", description: "A flexible plastic tray for freezing water into ice cubes." },
+    { id: "corkscrew", name: "Corkscrew", filename: "images/kitchen/corkscrew_50x50.png", category: "kitchen", type: "Tool", material: "Steel + Wood", rarity: "★★★☆☆", description: "A T-shaped tool with a spiral metal screw for drawing corks from bottles." },
+    { id: "nutcracker", name: "Nutcracker", filename: "images/kitchen/nutcracker_50x50.png", category: "kitchen", type: "Tool", material: "Steel", rarity: "★★★☆☆", description: "A heavy-duty hand tool designed to crack open hard shells of walnuts and pecans." },
+    { id: "egg_timer", name: "Egg Timer", filename: "images/kitchen/egg_timer_50x50.png", category: "kitchen", type: "Tool", material: "Wood + Glass", rarity: "★★★☆☆", description: "A classic sand hourglass for timing eggs and cooking tasks precisely." },
+    { id: "garlic_peeler", name: "Garlic Peeler", filename: "images/kitchen/garlic_peeler_50x50.png", category: "kitchen", type: "Utensil", material: "Silicone", rarity: "★★☆☆☆", description: "A flexible silicone tube that removes garlic skin when rolled under pressure." },
+    { id: "honey_dipper", name: "Honey Dipper", filename: "images/kitchen/honey_dipper_50x50.png", category: "kitchen", type: "Utensil", material: "Wood", rarity: "★★★☆☆", description: "A grooved wooden wand for drizzling honey without creating a sticky mess." },
+    { id: "oil_dispenser", name: "Oil Dispenser", filename: "images/kitchen/oil_dispenser_50x50.png", category: "kitchen", type: "Storage", material: "Glass + Metal", rarity: "★★★☆☆", description: "A glass bottle with a metal spout for pouring olive oil smoothly." },
+    { id: "thermos", name: "Thermos Flask", filename: "images/kitchen/thermos_50x50.png", category: "kitchen", type: "Storage", material: "Stainless Steel", rarity: "★★★☆☆", description: "An insulated flask that keeps hot soup or coffee warm for hours." },
+    { id: "bento_box", name: "Bento Box", filename: "images/kitchen/bento_box_50x50.png", category: "kitchen", type: "Storage", material: "Plastic", rarity: "★★★☆☆", description: "A divided lunch container for packing neat, portion-controlled meals." },
+    { id: "cake_stand", name: "Cake Stand", filename: "images/kitchen/cake_stand_50x50.png", category: "kitchen", type: "Serveware", material: "Steel + Glass", rarity: "★★★★☆", description: "A pedestal serving stand with a glass dome for displaying cakes and pies." },
+    { id: "cookie_cutter", name: "Cookie Cutter", filename: "images/kitchen/cookie_cutter_50x50.png", category: "kitchen", type: "Bakeware", material: "Metal", rarity: "★★☆☆☆", description: "A star-shaped metal mold for cutting shapes out of cookie dough." },
+    { id: "muffin_tin", name: "Muffin Tin", filename: "images/kitchen/muffin_tin_50x50.png", category: "kitchen", type: "Bakeware", material: "Steel", rarity: "★★★☆☆", description: "A multi-cup baking pan for baking cupcakes, muffins, and mini quiches." },
+    { id: "baking_sheet", name: "Baking Sheet", filename: "images/kitchen/baking_sheet_50x50.png", category: "kitchen", type: "Bakeware", material: "Steel", rarity: "★★★☆☆", description: "A flat sheet pan for baking cookies, pastries, and roasting vegetables." },
+    { id: "cooling_rack", name: "Cooling Rack", filename: "images/kitchen/cooling_rack_50x50.png", category: "kitchen", type: "Bakeware", material: "Steel", rarity: "★★★☆☆", description: "A wire rack that allows air to circulate around hot baked goods to cool them." },
+    { id: "piping_bag", name: "Piping Bag", filename: "images/kitchen/piping_bag_50x50.png", category: "kitchen", type: "Bakeware", material: "Plastic + Metal", rarity: "★★★☆☆", description: "A cone pastry bag with a metal tip for decorating cakes with icing." },
+    { id: "pastry_wheel", name: "Pastry Wheel", filename: "images/kitchen/pastry_wheel_50x50.png", category: "kitchen", type: "Bakeware", material: "Steel + Wood", rarity: "★★★☆☆", description: "A fluted wheel cutter for crimping and cutting dough for ravioli or pies." },
+    { id: "egg_separator", name: "Egg Separator", filename: "images/kitchen/egg_separator_50x50.png", category: "kitchen", type: "Utensil", material: "Stainless Steel", rarity: "★★☆☆☆", description: "A slot-designed spoon that separates egg whites from the yolk." },
+    { id: "garlic_keeper", name: "Garlic Keeper", filename: "images/kitchen/garlic_keeper_50x50.png", category: "kitchen", type: "Storage", material: "Ceramic", rarity: "★★★☆☆", description: "A ventilated ceramic jar that keeps garlic bulbs fresh and dry." },
+    { id: "trivet_silicone", name: "Silicone Trivet", filename: "images/kitchen/trivet_silicone_50x50.png", category: "kitchen", type: "Safety", material: "Silicone", rarity: "★★☆☆☆", description: "A heat-resistant silicone hot pad for protecting tables from hot cookware." },
+    { id: "grill_pan", name: "Grill Pan", filename: "images/kitchen/grill_pan_50x50.png", category: "kitchen", type: "Cookware", material: "Cast Iron", rarity: "★★★★☆", description: "A square pan with raised ridges that sear beautiful grill marks onto meats." },
+    { id: "double_boiler", name: "Double Boiler", filename: "images/kitchen/double_boiler_50x50.png", category: "kitchen", type: "Cookware", material: "Stainless Steel", rarity: "★★★★☆", description: "A nested pot setup that uses steam to melt chocolate or prepare delicate sauces." },
+    { id: "pressure_cooker", name: "Pressure Cooker", filename: "images/kitchen/pressure_cooker_50x50.png", category: "kitchen", type: "Cookware", material: "Stainless Steel", rarity: "★★★★☆", description: "A sealed cooking pot that cooks food rapidly using high-pressure steam." },
+    { id: "slow_cooker", name: "Slow Cooker", filename: "images/kitchen/slow_cooker_50x50.png", category: "kitchen", type: "Appliance", material: "Ceramic + Steel", rarity: "★★★★☆", description: "A countertop appliance used for simmering food at low temperatures for hours." },
+    { id: "air_fryer", name: "Air Fryer", filename: "images/kitchen/air_fryer_50x50.png", category: "kitchen", type: "Appliance", material: "Plastic + Steel", rarity: "★★★★☆", description: "A rapid hot air convection oven that mimics deep-frying without oil." },
+    { id: "food_processor", name: "Food Processor", filename: "images/kitchen/food_processor_50x50.png", category: "kitchen", type: "Appliance", material: "Plastic + Steel", rarity: "★★★★☆", description: "A motorized kitchen appliance used for chopping, pureeing, and mixing ingredients." },
+    { id: "hand_mixer", name: "Hand Mixer", filename: "images/kitchen/hand_mixer_50x50.png", category: "kitchen", type: "Appliance", material: "Plastic + Steel", rarity: "★★★☆☆", description: "A handheld electric mixer with rotating beaters for whipping cream and eggs." },
+    { id: "stand_mixer", name: "Stand Mixer", filename: "images/kitchen/stand_mixer_50x50.png", category: "kitchen", type: "Appliance", material: "Cast Metal", rarity: "★★★★★", description: "A powerful stationary stand mixer equipped with a large bowl and dough hooks." },
+    { id: "crepe_pan", name: "Crepe Pan", filename: "images/kitchen/crepe_pan_50x50.png", category: "kitchen", type: "Cookware", material: "Cast Iron", rarity: "★★★★☆", description: "A flat, heavy pan with very low rims for flipping and cooking thin crepes." },
+    { id: "fondue_pot", name: "Fondue Pot", filename: "images/kitchen/fondue_pot_50x50.png", category: "kitchen", type: "Cookware", material: "Ceramic + Steel", rarity: "★★★★☆", description: "A communal heated pot for keeping cheese or chocolate melted for dipping." },
+    { id: "sushi_mat", name: "Sushi Mat", filename: "images/kitchen/sushi_mat_50x50.png", category: "kitchen", type: "Prep", material: "Bamboo", rarity: "★★☆☆☆", description: "A flexible bamboo mat used for rolling sushi rolls tightly and neatly." },
+    { id: "tea_cozy", name: "Tea Cozy", filename: "images/kitchen/tea_cozy_50x50.png", category: "kitchen", type: "Safety", material: "Cotton", rarity: "★★★☆☆", description: "An insulated fabric cover placed over a teapot to keep the tea warm." },
+    { id: "bread_lame", name: "Bread Lame", filename: "images/kitchen/bread_lame_50x50.png", category: "kitchen", type: "Prep", material: "Wood + Steel", rarity: "★★★★☆", description: "A handle holding a thin razor blade used for scoring decorative cuts on bread dough." },
+    { id: "cherry_pitter", name: "Cherry Pitter", filename: "images/kitchen/cherry_pitter_50x50.png", category: "kitchen", type: "Utensil", material: "Stainless Steel", rarity: "★★★☆☆", description: "A pliers-like tool for plunging the pit out of fresh cherries and olives." },
+    { id: "butter_curler", name: "Butter Curler", filename: "images/kitchen/butter_curler_50x50.png", category: "kitchen", type: "Utensil", material: "Steel + Wood", rarity: "★★★☆☆", description: "A decorative kitchen utensil used for creating scrolls or curls of butter." },
+    { id: "gravy_boat", name: "Gravy Boat", filename: "images/kitchen/gravy_boat_50x50.png", category: "kitchen", type: "Serveware", material: "Ceramic", rarity: "★★☆☆☆", description: "An elongated jug with a handle and spout for serving sauce or gravy." },
+    { id: "salt_pig", name: "Salt Pig", filename: "images/kitchen/salt_pig_50x50.png", category: "kitchen", type: "Storage", material: "Ceramic", rarity: "★★★☆☆", description: "A pottery jar with a wide, open snout for keeping salt dry and easy to pinch." },
+    { id: "pepper_mill", name: "Pepper Mill", filename: "images/kitchen/pepper_mill_50x50.png", category: "kitchen", type: "Tool", material: "Wood", rarity: "★★★☆☆", description: "A wooden grinder that cracks fresh peppercorns over food." },
+    { id: "cheese_board", name: "Cheese Board", filename: "images/kitchen/cheese_board_50x50.png", category: "kitchen", type: "Serveware", material: "Slate", rarity: "★★★★☆", description: "A dark slate board used for presenting cheeses, crackers, and fruits." },
+    { id: "knife_block", name: "Knife Block", filename: "images/kitchen/knife_block_50x50.png", category: "kitchen", type: "Storage", material: "Wood", rarity: "★★★☆☆", description: "A heavy slotted wooden block for storing kitchen knives safely on the counter." },
+    { id: "trivet_cast_iron", name: "Cast Iron Trivet", filename: "images/kitchen/trivet_cast_iron_50x50.png", category: "kitchen", type: "Safety", material: "Cast Iron", rarity: "★★★☆☆", description: "An ornate metal hot stand designed to keep piping hot pots off the table." },
+    { id: "matchbox", name: "Matchbox", filename: "images/kitchen/matchbox_50x50.png", category: "kitchen", type: "Tool", material: "Paper", rarity: "★☆☆☆☆", description: "A sliding cardboard box containing safety matches for lighting gas stoves." },
+    { id: "egg_slicer", name: "Egg Slicer", filename: "images/kitchen/egg_slicer_50x50.png", category: "kitchen", type: "Prep", material: "White Plastic", rarity: "★★☆☆☆", description: "A simple mechanical slicer with fine wire blades to slice hard-boiled eggs evenly." },
+    { id: "oil_sprayer", name: "Oil Sprayer", filename: "images/kitchen/oil_sprayer_50x50.png", category: "kitchen", type: "Storage", material: "Glass + Steel", rarity: "★★★☆☆", description: "A pump-action spray bottle to mist cooking oil evenly over foods and pans." },
+    { id: "dough_scraper", name: "Dough Scraper", filename: "images/kitchen/dough_scraper_50x50.png", category: "kitchen", type: "Bakeware", material: "Wood + Steel", rarity: "★★★☆☆", description: "A flat metal scraper for cutting dough and scraping flour off work surfaces." },
+    { id: "flour_sifter", name: "Flour Sifter", filename: "images/kitchen/flour_sifter_50x50.png", category: "kitchen", type: "Bakeware", material: "Stainless Steel", rarity: "★★★☆☆", description: "A hand-cranked mesh canister for sifting flour and aerating baking ingredients." },
+    { id: "garlic_grater", name: "Garlic Grater", filename: "images/kitchen/garlic_grater_50x50.png", category: "kitchen", type: "Utensil", material: "Ceramic", rarity: "★★★☆☆", description: "A shallow ceramic dish with sharp textured ridges for pureeing garlic and ginger." },
+    { id: "potato_masher", name: "Potato Masher", filename: "images/kitchen/potato_masher_50x50.png", category: "kitchen", type: "Utensil", material: "Wood + Steel", rarity: "★★☆☆☆", description: "A vertical masher with a wavy steel plate for crushing cooked potatoes and root vegetables." },
+    { id: "basting_bulb", name: "Basting Bulb", filename: "images/kitchen/basting_bulb_50x50.png", category: "kitchen", type: "Prep", material: "Silicone + Glass", rarity: "★★★☆☆", description: "A pipette with a large rubber bulb for suctioning pan juices to baste roasting meats." },
+    { id: "meat_thermometer", name: "Meat Thermometer", filename: "images/kitchen/meat_thermometer_50x50.png", category: "kitchen", type: "Tool", material: "Steel + Glass", rarity: "★★★☆☆", description: "An analog probe thermometer for checking the internal temperature of roasting meats." },
+    { id: "herb_stripper", name: "Herb Stripper", filename: "images/kitchen/herb_stripper_50x50.png", category: "kitchen", type: "Prep", material: "Stainless Steel", rarity: "★★★☆☆", description: "A handheld metal card with holes of various sizes for stripping leaves off leafy herbs." },
+    { id: "jar_opener", name: "Jar Opener", filename: "images/kitchen/jar_opener_50x50.png", category: "kitchen", type: "Tool", material: "Rubber", rarity: "★☆☆☆☆", description: "A high-grip textured rubber disc to help twist open stubborn jar lids." },
+    { id: "melon_slicer", name: "Melon Slicer", filename: "images/kitchen/melon_slicer_50x50.png", category: "kitchen", type: "Prep", material: "Steel + Plastic", rarity: "★★★★☆", description: "A circular multi-blade slicer that cuts whole melons into uniform wedges in one press." },
+    { id: "avocado_slicer", name: "Avocado Slicer", filename: "images/kitchen/avocado_slicer_50x50.png", category: "kitchen", type: "Prep", material: "Plastic + Steel", rarity: "★★★☆☆", description: "A 3-in-1 tool designed to split, pit, and slice fresh avocados cleanly." },
+    { id: "salad_tongs", name: "Salad Tongs", filename: "images/kitchen/salad_tongs_50x50.png", category: "kitchen", type: "Utensil", material: "Wood", rarity: "★★☆☆☆", description: "A pair of hand-shaped wooden serving spoons designed for tossing and serving salad." },
+    { id: "butter_crock", name: "Butter Crock", filename: "images/kitchen/butter_crock_50x50.png", category: "kitchen", type: "Storage", material: "Ceramic", rarity: "★★★★☆", description: "A French butter keeper that uses water seal to store butter soft and spreadable." },
+    { id: "honey_pot", name: "Honey Pot", filename: "images/kitchen/honey_pot_50x50.png", category: "kitchen", type: "Storage", material: "Ceramic", rarity: "★★★☆☆", description: "A round ceramic pot with a honey bee design for storing fresh honey." },
+    { id: "salt_cellar", name: "Salt Cellar", filename: "images/kitchen/salt_cellar_50x50.png", category: "kitchen", type: "Storage", material: "Wood", rarity: "★★★☆☆", description: "A countertop container with a magnetic pivoting lid for storing kosher salt." },
+    { id: "ice_bucket", name: "Ice Bucket", filename: "images/kitchen/ice_bucket_50x50.png", category: "kitchen", type: "Serveware", material: "Stainless Steel", rarity: "★★★★☆", description: "A double-walled insulated ice bucket with hanging tongs for serving cold drinks." },
+    { id: "cocktail_shaker", name: "Cocktail Shaker", filename: "images/kitchen/cocktail_shaker_50x50.png", category: "kitchen", type: "Drinkware", material: "Stainless Steel", rarity: "★★★★☆", description: "A three-piece shaker with a built-in strainer for mixing iced cocktails." },
+    { id: "jigger", name: "Measuring Jigger", filename: "images/kitchen/jigger_50x50.png", category: "kitchen", type: "Drinkware", material: "Stainless Steel", rarity: "★★★☆☆", description: "A dual-sided measuring cup for portioning spirits and cocktail ingredients." },
+    { id: "muddler", name: "Muddler", filename: "images/kitchen/muddler_50x50.png", category: "kitchen", type: "Utensil", material: "Wood", rarity: "★★★☆☆", description: "A wooden pestle for mashing fresh fruit, sugar, and herbs in cocktail glasses." },
+    { id: "cocktail_strainer", name: "Hawthorne Strainer", filename: "images/kitchen/cocktail_strainer_50x50.png", category: "kitchen", type: "Utensil", material: "Stainless Steel", rarity: "★★★☆☆", description: "A metal disc strainer with a wire spring coil designed for cocktail mixing cups." },
+    { id: "bottle_stopper", name: "Bottle Stopper", filename: "images/kitchen/bottle_stopper_50x50.png", category: "kitchen", type: "Storage", material: "Cork + Ceramic", rarity: "★★☆☆☆", description: "A decorative stopper to reseal opened wine bottles and preserve freshness." },
+    { id: "wine_decanter", name: "Wine Decanter", filename: "images/kitchen/wine_decanter_50x50.png", category: "kitchen", type: "Drinkware", material: "Glass", rarity: "★★★★☆", description: "A wide-based glass carafe used to aerate and serve red wine." },
+    { id: "wine_aerator", name: "Wine Aerator", filename: "images/kitchen/wine_aerator_50x50.png", category: "kitchen", type: "Drinkware", material: "Acrylic", rarity: "★★★★☆", description: "An in-line pourer that injects air directly into wine as it is poured." },
+    { id: "wine_cooler", name: "Wine Chiller", filename: "images/kitchen/wine_cooler_50x50.png", category: "kitchen", type: "Storage", material: "Stainless Steel", rarity: "★★★★☆", description: "An insulated double-walled cylinder designed to keep wine bottles chilled." },
+    { id: "champagne_stopper", name: "Champagne Stopper", filename: "images/kitchen/champagne_stopper_50x50.png", category: "kitchen", type: "Storage", material: "Stainless Steel", rarity: "★★★★☆", description: "A heavy pressure-locking cap designed to preserve bubbles in sparkling wines." },
+    { id: "beer_mug", name: "Beer Stein", filename: "images/kitchen/beer_mug_50x50.png", category: "kitchen", type: "Drinkware", material: "Glass", rarity: "★★☆☆☆", description: "A heavy-duty glass mug with a thick handle for serving cold beer." },
+    { id: "shot_glass", name: "Shot Glass", filename: "images/kitchen/shot_glass_50x50.png", category: "kitchen", type: "Drinkware", material: "Glass", rarity: "★★☆☆☆", description: "A small, heavy-based glass designed for serving shots of spirits." },
+    { id: "whiskey_stones", name: "Whiskey Stones", filename: "images/kitchen/whiskey_stones_50x50.png", category: "kitchen", type: "Drinkware", material: "Soapstone", rarity: "★★★★☆", description: "A set of chilled natural soapstone cubes used to cool whiskey without diluting it." },
+    { id: "flask", name: "Hip Flask", filename: "images/kitchen/flask_50x50.png", category: "kitchen", type: "Storage", material: "Stainless Steel", rarity: "★★★☆☆", description: "A thin, curved pocket flask designed for carrying liquor on the go." },
+    { id: "tea_caddy", name: "Tea Caddy", filename: "images/kitchen/tea_caddy_50x50.png", category: "kitchen", type: "Storage", material: "Tin", rarity: "★★★☆☆", description: "A sealed metal storage canister for keeping loose tea leaves fresh and dry." },
+    { id: "coffee_canister", name: "Coffee Canister", filename: "images/kitchen/coffee_canister_50x50.png", category: "kitchen", type: "Storage", material: "Steel", rarity: "★★★★☆", description: "An airtight canister with a vacuum valve for storing roasted coffee beans." },
+    { id: "sugar_bowl", name: "Sugar Bowl", filename: "images/kitchen/sugar_bowl_50x50.png", category: "kitchen", type: "Serveware", material: "Ceramic", rarity: "★★☆☆☆", description: "A lidded ceramic dish designed for serving table sugar." },
+    { id: "cream_pitcher", name: "Creamer Pitcher", filename: "images/kitchen/cream_pitcher_50x50.png", category: "kitchen", type: "Serveware", material: "Ceramic", rarity: "★★☆☆☆", description: "A small ceramic pitcher designed for serving milk or cream with coffee." },
+    { id: "tea_tray", name: "Gongfu Tea Tray", filename: "images/kitchen/tea_tray_50x50.png", category: "kitchen", type: "Serveware", material: "Wood", rarity: "★★★★☆", description: "A slotted wooden tray designed to catch runoff water during traditional tea brewing." },
+    { id: "tea_timer", name: "Tea Timer", filename: "images/kitchen/tea_timer_50x50.png", category: "kitchen", type: "Tool", material: "Wood + Glass", rarity: "★★★☆☆", description: "A triple-sand timer for timing green, black, and herbal teas." },
+    { id: "coffee_grinder", name: "Coffee Grinder", filename: "images/kitchen/coffee_grinder_50x50.png", category: "kitchen", type: "Tool", material: "Wood + Steel", rarity: "★★★★☆", description: "A manual crank grinder with adjustable ceramic burrs for grinding coffee beans." },
+    { id: "milk_frother", name: "Milk Frother", filename: "images/kitchen/milk_frother_50x50.png", category: "kitchen", type: "Appliance", material: "Plastic + Steel", rarity: "★★★☆☆", description: "A handheld battery-operated whisk for frothing milk for lattes and cappuccinos." },
+    { id: "french_press", name: "French Press", filename: "images/kitchen/french_press_50x50.png", category: "kitchen", type: "Appliance", material: "Glass + Steel", rarity: "★★★☆☆", description: "A classic glass press with a mesh plunger for steeping and filtering coffee." },
+    { id: "pour_over_cone", name: "Pour Over Cone", filename: "images/kitchen/pour_over_cone_50x50.png", category: "kitchen", type: "Appliance", material: "Ceramic", rarity: "★★★☆☆", description: "A ceramic V60 cone designed for slow pour-over coffee filtration." },
+    { id: "gooseneck_kettle", name: "Gooseneck Kettle", filename: "images/kitchen/gooseneck_kettle_50x50.png", category: "kitchen", type: "Appliance", material: "Steel", rarity: "★★★★☆", description: "An electric kettle with a slender gooseneck spout for precise water flow control." },
+    { id: "digital_timer", name: "Digital Timer", filename: "images/kitchen/digital_timer_50x50.png", category: "kitchen", type: "Tool", material: "Plastic", rarity: "★★★☆☆", description: "A digital LCD timer with start/stop buttons and a magnetic back." },
+    { id: "recipe_holder", name: "Recipe Holder", filename: "images/kitchen/recipe_holder_50x50.png", category: "kitchen", type: "Tool", material: "Wood", rarity: "★★★☆☆", description: "A wooden easel stand designed for holding cookbooks or tablets in the kitchen." },
+    { id: "trivet_cork", name: "Cork Trivet", filename: "images/kitchen/trivet_cork_50x50.png", category: "kitchen", type: "Safety", material: "Cork", rarity: "★★☆☆☆", description: "A thick heat-absorbing cork hot pad for protecting tables." },
+    { id: "pinch_bowls", name: "Pinch Bowls", filename: "images/kitchen/pinch_bowls_50x50.png", category: "kitchen", type: "Prep", material: "Ceramic", rarity: "★★☆☆☆", description: "A set of miniature prep bowls for holding pre-measured spices and herbs." },
+    { id: "toothpick_holder", name: "Toothpick Holder", filename: "images/kitchen/toothpick_holder_50x50.png", category: "kitchen", type: "Storage", material: "Glass", rarity: "★★☆☆☆", description: "A small glass shaker jar containing bamboo toothpicks." },
+    { id: "coaster", name: "Slate Coaster", filename: "images/kitchen/coaster_50x50.png", category: "kitchen", type: "Serveware", material: "Slate", rarity: "★★☆☆☆", description: "A square slate coaster with foam feet to protect tables from drink rings." },
+    { id: "napkin_holder", name: "Napkin Holder", filename: "images/kitchen/napkin_holder_50x50.png", category: "kitchen", type: "Storage", material: "Steel", rarity: "★★☆☆☆", description: "A vertical wire rack for holding paper napkins upright on the table." },
+    { id: "dish_brush", name: "Dish Brush", filename: "images/kitchen/dish_brush_50x50.png", category: "kitchen", type: "Cleaning", material: "Wood + Bristle", rarity: "★★☆☆☆", description: "A wooden scrub brush with stiff bristles for heavy-duty dish cleaning." },
+    { id: "lemon_squeezer", name: "Lemon Squeezer", filename: "images/kitchen/lemon_squeezer_50x50.png", category: "kitchen", type: "Utensil", material: "Yellow Metal", rarity: "★★★☆☆", description: "A hinged handheld press for squeezing maximum juice out of citrus halves." },
+    { id: "garlic_roaster", name: "Garlic Roaster", filename: "images/kitchen/garlic_roaster_50x50.png", category: "kitchen", type: "Cookware", material: "Terracotta", rarity: "★★★☆☆", description: "A terracotta baking dish designed specifically for roasting whole garlic bulbs." },
+    { id: "tea_kettle_whistling", name: "Whistling Kettle", filename: "images/kitchen/tea_kettle_whistling_50x50.png", category: "kitchen", type: "Appliance", material: "Copper", rarity: "★★★★☆", description: "A classic whistling copper kettle that sings when water reaches boiling point." },
+    { id: "trivet_wooden", name: "Slat Wooden Trivet", filename: "images/kitchen/trivet_wooden_50x50.png", category: "kitchen", type: "Safety", material: "Wood", rarity: "★★☆☆☆", description: "A slatted wooden hot pad designed to keep hot dishes from burning surfaces." },
+    { id: "cake_tester", name: "Cake Tester", filename: "images/kitchen/cake_tester_50x50.png", category: "kitchen", type: "Tool", material: "Steel + Plastic", rarity: "★★☆☆☆", description: "A thin metal pin inserted into cakes to check if they are fully baked inside." },
+    { id: "pot_scraper", name: "Pot Scraper", filename: "images/kitchen/pot_scraper_50x50.png", category: "kitchen", type: "Cleaning", material: "Plastic", rarity: "★☆☆☆☆", description: "A small, curved plastic scraper designed to scrape stuck food off pots and pans." },
+    { id: "oil_cruet", name: "Ceramic Oil Cruet", filename: "images/kitchen/oil_cruet_50x50.png", category: "kitchen", type: "Storage", material: "Ceramic", rarity: "★★★☆☆", description: "An opaque ceramic bottle with a metal spout for pouring olive oil smoothly." },
+    { id: "funnel_collapsible", name: "Collapsible Funnel", filename: "images/kitchen/funnel_collapsible_50x50.png", category: "kitchen", type: "Utensil", material: "Silicone", rarity: "★★☆☆☆", description: "A flexible silicone funnel that folds flat for space-saving kitchen storage." },
+    { id: "spoon_rest", name: "Spoon Rest", filename: "images/kitchen/spoon_rest_50x50.png", category: "kitchen", type: "Utensil", material: "Ceramic", rarity: "★★☆☆☆", description: "A shallow ceramic dish for holding messy spoons on the stove while cooking." },
+    { id: "bag_clip", name: "Bag Clip", filename: "images/kitchen/bag_clip_50x50.png", category: "kitchen", type: "Storage", material: "Plastic", rarity: "★☆☆☆☆", description: "A spring-loaded plastic clip to seal opened chip bags and keep snacks fresh." },
+    { id: "egg_rack", name: "Egg Counter Rack", filename: "images/kitchen/egg_rack_50x50.png", category: "kitchen", type: "Storage", material: "Wood", rarity: "★★☆☆☆", description: "A wooden display stand for holding fresh eggs upright on the kitchen counter." },
+    { id: "kitchen_shears", name: "Kitchen Shears", filename: "images/kitchen/kitchen_shears_50x50.png", category: "kitchen", type: "Cutlery", material: "Steel + Plastic", rarity: "★★☆☆☆", description: "Heavy-duty kitchen scissors designed for cutting herbs, packaging, and meat." },
+    { id: "poultry_shears", name: "Poultry Shears", filename: "images/kitchen/poultry_shears_50x50.png", category: "kitchen", type: "Cutlery", material: "Steel", rarity: "★★★★☆", description: "Curved spring-loaded shears designed to cut through tough chicken bones." },
+    { id: "meat_claws", name: "Meat Claws", filename: "images/kitchen/meat_claws_50x50.png", category: "kitchen", type: "Utensil", material: "Plastic + Steel", rarity: "★★★☆☆", description: "Spiked claw handles used for shredding pulled pork, beef, and chicken." },
+    { id: "fish_scaler", name: "Fish Scaler", filename: "images/kitchen/fish_scaler_50x50.png", category: "kitchen", type: "Utensil", material: "Steel + Wood", rarity: "★★★☆☆", description: "A textured steel scraping tool for removing scales from fresh fish." },
+    { id: "apple_corer", name: "Apple Corer", filename: "images/kitchen/apple_corer_50x50.png", category: "kitchen", type: "Utensil", material: "Steel + Plastic", rarity: "★★☆☆☆", description: "A circular plunge tool designed to extract cores from apples and pears." },
+    { id: "pineapple_corer", name: "Pineapple Corer", filename: "images/kitchen/pineapple_corer_50x50.png", category: "kitchen", type: "Utensil", material: "Steel + Yellow Plastic", rarity: "★★★★☆", description: "A spiral slicing tool that peels, cores, and slices pineapples." },
+    { id: "olive_spoon", name: "Olive Spoon", filename: "images/kitchen/olive_spoon_50x50.png", category: "kitchen", type: "Utensil", material: "Stainless Steel", rarity: "★★☆☆☆", description: "A long-handled spoon with drainage holes for scooping olives from deep jars." },
+    { id: "cheese_slicer", name: "Cheese Slicer", filename: "images/kitchen/cheese_slicer_50x50.png", category: "kitchen", type: "Utensil", material: "Steel + Plastic", rarity: "★★☆☆☆", description: "A flat shovel-style cheese plane designed to cut thin, even cheese slices." },
+    { id: "cheese_wire", name: "Cheese Wire Board", filename: "images/kitchen/cheese_wire_50x50.png", category: "kitchen", type: "Prep", material: "Wood + Steel", rarity: "★★★★☆", description: "A wooden board equipped with a wire cutter arm for slicing cheese." },
+    { id: "dough_whisk", name: "Dough Whisk", filename: "images/kitchen/dough_whisk_50x50.png", category: "kitchen", type: "Bakeware", material: "Steel + Wood", rarity: "★★★★☆", description: "A Danish dough whisk with circular wire loops for mixing thick bread dough." },
+    { id: "pastry_blender", name: "Pastry Blender", filename: "images/kitchen/pastry_blender_50x50.png", category: "kitchen", type: "Bakeware", material: "Steel + Wood", rarity: "★★★☆☆", description: "A dough blender tool with parallel curved blades for cutting butter into flour." },
+    { id: "bowl_scraper", name: "Bowl Scraper", filename: "images/kitchen/bowl_scraper_50x50.png", category: "kitchen", type: "Bakeware", material: "Silicone", rarity: "★★☆☆☆", description: "A flexible silicone card designed for scraping clean the curves of bowls." },
+    { id: "pie_weights", name: "Pie Weights", filename: "images/kitchen/pie_weights_50x50.png", category: "kitchen", type: "Bakeware", material: "Glass + Ceramic", rarity: "★★★☆☆", description: "A jar of ceramic baking beads used to weight down pie crusts during blind baking." },
+    { id: "pie_bird", name: "Pie Bird", filename: "images/kitchen/pie_bird_50x50.png", category: "kitchen", type: "Bakeware", material: "Ceramic", rarity: "★★★★☆", description: "A hollow ceramic chimney bird placed in pies to vent steam and prevent boil-overs." },
+    { id: "pie_crust_shield", name: "Pie Crust Shield", filename: "images/kitchen/pie_crust_shield_50x50.png", category: "kitchen", type: "Bakeware", material: "Stainless Steel", rarity: "★★★☆☆", description: "A metal ring protector placed over pie edges to prevent the crust from burning." },
+    { id: "cake_leveler", name: "Cake Leveler", filename: "images/kitchen/cake_leveler_50x50.png", category: "kitchen", type: "Bakeware", material: "Stainless Steel", rarity: "★★★★☆", description: "An adjustable wire frame leveler designed to slice cakes into flat layers." },
+    { id: "icing_spatula", name: "Icing Spatula", filename: "images/kitchen/icing_spatula_50x50.png", category: "kitchen", type: "Bakeware", material: "Steel + Wood", rarity: "★★★☆☆", description: "An offset palette knife spatula designed to spread frosting flat on cakes." },
+    { id: "cake_scraper", name: "Cake Scraper", filename: "images/kitchen/cake_scraper_50x50.png", category: "kitchen", type: "Bakeware", material: "Stainless Steel", rarity: "★★★☆☆", description: "A tall metal card with serrated edges for smoothing cake icing." },
+    { id: "cookie_scoop", name: "Cookie Scoop", filename: "images/kitchen/cookie_scoop_50x50.png", category: "kitchen", type: "Bakeware", material: "Steel + Yellow", rarity: "★★★☆☆", description: "A spring-loaded dough scoop for portioning cookies, muffins, or meatballs." },
+    { id: "biscuit_cutter", name: "Biscuit Cutter", filename: "images/kitchen/biscuit_cutter_50x50.png", category: "kitchen", type: "Bakeware", material: "Stainless Steel", rarity: "★★☆☆☆", description: "A circular metal ring mold with a handle for cutting biscuits and scones." },
+    { id: "rolling_mat", name: "Rolling Mat", filename: "images/kitchen/rolling_mat_50x50.png", category: "kitchen", type: "Bakeware", material: "Silicone", rarity: "★★★☆☆", description: "A non-stick silicone baking mat with circular measurements for rolling dough." },
+    { id: "pizza_stone", name: "Pizza Stone", filename: "images/kitchen/pizza_stone_50x50.png", category: "kitchen", type: "Cookware", material: "Ceramic", rarity: "★★★★☆", description: "A round ceramic stone that retains heat for baking crisp pizza crusts." },
+    { id: "pizza_peel", name: "Pizza Peel", filename: "images/kitchen/pizza_peel_50x50.png", category: "kitchen", type: "Prep", material: "Wood", rarity: "★★★★☆", description: "A wide wooden paddle used to slide pizzas safely in and out of hot ovens." },
+    { id: "trivet_wool", name: "Wool Ball Trivet", filename: "images/kitchen/trivet_wool_50x50.png", category: "kitchen", type: "Safety", material: "Wool", rarity: "★★★★☆", description: "A colorful round hot pad composed of stitched felt wool balls." },
+    { id: "trivet_bamboo", name: "Bamboo Trivet", filename: "images/kitchen/trivet_bamboo_50x50.png", category: "kitchen", type: "Safety", material: "Bamboo", rarity: "★★☆☆☆", description: "A lattice-structured bamboo hot pad designed to insulate tables." },
+    { id: "pan_protectors", name: "Pan Protectors", filename: "images/kitchen/pan_protectors_50x50.png", category: "kitchen", type: "Safety", material: "Felt", rarity: "★★☆☆☆", description: "Felt separator pads placed between stacked pans to prevent scratches." },
+    { id: "bag_sealer", name: "Bag Sealer", filename: "images/kitchen/bag_sealer_50x50.png", category: "kitchen", type: "Tool", material: "White Plastic", rarity: "★★★☆☆", description: "A handheld heat sealer tool designed for sealing plastic food bags." },
+    { id: "yogurt_maker", name: "Yogurt Maker", filename: "images/kitchen/yogurt_maker_50x50.png", category: "kitchen", type: "Appliance", material: "Plastic", rarity: "★★★★☆", description: "A slow-heating electric base designed to incubate homemade yogurt jars." },
+    { id: "soda_maker", name: "Soda Maker", filename: "images/kitchen/soda_maker_50x50.png", category: "kitchen", type: "Appliance", material: "Plastic + Glass", rarity: "★★★★☆", description: "A carbonator machine designed to inject carbon dioxide into tap water." },
+    { id: "ice_crusher", name: "Ice Crusher", filename: "images/kitchen/ice_crusher_50x50.png", category: "kitchen", type: "Appliance", material: "Steel", rarity: "★★★☆☆", description: "A manual crank crusher box that grinds whole ice cubes into crushed ice." },
+    { id: "salad_bowl", name: "Wooden Salad Bowl", filename: "images/kitchen/salad_bowl_50x50.png", category: "kitchen", type: "Serveware", material: "Wood", rarity: "★★★☆☆", description: "A large wooden serving bowl filled with fresh green salad." },
+    { id: "salad_servers", name: "Salad Servers", filename: "images/kitchen/salad_servers_50x50.png", category: "kitchen", type: "Utensil", material: "Wood", rarity: "★★☆☆☆", description: "A pair of large wooden serving spoons designed for tossing salads." },
+    { id: "butter_spreader", name: "Butter Spreader", filename: "images/kitchen/butter_spreader_50x50.png", category: "kitchen", type: "Utensil", material: "Steel + Wood", rarity: "★★☆☆☆", description: "A small blunt knife designed specifically for spreading butter and soft spreads." },
+    { id: "honey_jar", name: "Honey Jar", filename: "images/kitchen/honey_jar_50x50.png", category: "kitchen", type: "Storage", material: "Glass", rarity: "★★☆☆☆", description: "A glass storage jar designed to hold honey, with a lid slot for a honey dipper." },
+    { id: "salt_grinder", name: "Salt Grinder", filename: "images/kitchen/salt_grinder_50x50.png", category: "kitchen", type: "Tool", material: "Glass + Steel", rarity: "★★★☆☆", description: "An acrylic grinder that cracks coarse salt crystals over food." },
+    { id: "oil_can", name: "Oil Can", filename: "images/kitchen/oil_can_50x50.png", category: "kitchen", type: "Storage", material: "Steel", rarity: "★★★☆☆", description: "A retro metal dispenser can with a long, thin curved spout for pouring oil." },
+    { id: "bottle_capper", name: "Bottle Capper", filename: "images/kitchen/bottle_capper_50x50.png", category: "kitchen", type: "Tool", material: "Red Metal + Steel", rarity: "★★★★☆", description: "A twin-lever hand capper tool designed to lock caps onto glass bottles." },
+    { id: "wine_rack", name: "Wine Rack", filename: "images/kitchen/wine_rack_50x50.png", category: "kitchen", type: "Storage", material: "Wood", rarity: "★★★☆☆", description: "A small wooden storage display rack for organizing wine bottles." },
+    { id: "wine_thermometer", name: "Wine Thermometer", filename: "images/kitchen/wine_thermometer_50x50.png", category: "kitchen", type: "Tool", material: "Silver Metal", rarity: "★★★★☆", description: "A snap-on thermometer band designed to monitor wine bottle temperatures." },
+];
+
+// ─── Vehicles Dataset ────────────────────────────────────────────────────────
+const vehicles = [
+    { id: "sedan", name: "Sedan", filename: "images/vehicles/sedan_50x50.png", category: "vehicles", type: "Land", material: "Gasoline", rarity: "★★☆☆☆", description: "A standard four-door passenger car with a separate trunk compartment." },
+    { id: "sports_car", name: "Sports Car", filename: "images/vehicles/sports_car_50x50.png", category: "vehicles", type: "Land", material: "Premium Gas", rarity: "★★★★☆", description: "A sleek, low-slung automobile designed for high-speed performance and agile handling." },
+    { id: "pickup_truck", name: "Pickup Truck", filename: "images/vehicles/pickup_truck_50x50.png", category: "vehicles", type: "Land", material: "Diesel", rarity: "★★★☆☆", description: "A light duty truck featuring an open cargo tailgate bed for utility haulage." },
+    { id: "suv", name: "SUV", filename: "images/vehicles/suv_50x50.png", category: "vehicles", type: "Land", material: "Gasoline", rarity: "★★☆☆☆", description: "A spacious sport utility vehicle offering elevated ground clearance and cargo capacity." },
+    { id: "minivan", name: "Minivan", filename: "images/vehicles/minivan_50x50.png", category: "vehicles", type: "Land", material: "Gasoline", rarity: "★★☆☆☆", description: "A family passenger van featuring sliding rear doors and modular three-row seating." },
+    { id: "convertible", name: "Convertible", filename: "images/vehicles/convertible_50x50.png", category: "vehicles", type: "Land", material: "Gasoline", rarity: "★★★☆☆", description: "A passenger car with a retractable roof, allowing open-air driving." },
+    { id: "limousine", name: "Limousine", filename: "images/vehicles/limousine_50x50.png", category: "vehicles", type: "Land", material: "Gasoline", rarity: "★★★★☆", description: "An ultra-long luxury sedan driven by a chauffeur, featuring a partitioned cabin." },
+    { id: "race_car", name: "Formula 1 Car", filename: "images/vehicles/race_car_50x50.png", category: "vehicles", type: "Land", material: "Racing Fuel", rarity: "★★★★★", description: "An open-wheel, single-seat racing car with extreme aerodynamic wings." },
+    { id: "monster_truck", name: "Monster Truck", filename: "images/vehicles/monster_truck_50x50.png", category: "vehicles", type: "Land", material: "Methanol", rarity: "★★★★☆", description: "A specialized truck with giant oversized wheels and heavy-duty suspension." },
+    { id: "fire_truck", name: "Fire Truck", filename: "images/vehicles/fire_truck_50x50.png", category: "vehicles", type: "Land", material: "Diesel", rarity: "★★★★☆", description: "An emergency rescue vehicle equipped with ladders, pumps, and water hoses." },
+    { id: "police_car", name: "Police Car", filename: "images/vehicles/police_car_50x50.png", category: "vehicles", type: "Land", material: "Gasoline", rarity: "★★★☆☆", description: "A law enforcement cruiser fitted with emergency sirens, decals, and police lights." },
+    { id: "ambulance", name: "Ambulance", filename: "images/vehicles/ambulance_50x50.png", category: "vehicles", type: "Land", material: "Diesel", rarity: "★★★☆☆", description: "A medical emergency vehicle outfitted for transporting patients with life support." },
+    { id: "school_bus", name: "School Bus", filename: "images/vehicles/school_bus_50x50.png", category: "vehicles", type: "Land", material: "Diesel", rarity: "★★☆☆☆", description: "A classic yellow transit bus dedicated to student safety and school commutes." },
+    { id: "double_decker_bus", name: "Double Decker Bus", filename: "images/vehicles/double_decker_bus_50x50.png", category: "vehicles", type: "Land", material: "Diesel / Electric", rarity: "★★★☆☆", description: "A high-capacity two-level transit bus commonly used for city sightseeing." },
+    { id: "garbage_truck", name: "Garbage Truck", filename: "images/vehicles/garbage_truck_50x50.png", category: "vehicles", type: "Land", material: "Diesel", rarity: "★★★☆☆", description: "A heavy utility truck equipped with an automated hydraulic waste compactor." },
+    { id: "cement_mixer", name: "Cement Mixer", filename: "images/vehicles/cement_mixer_50x50.png", category: "vehicles", type: "Land", material: "Diesel", rarity: "★★★☆☆", description: "A specialty truck carrying a rotating drum to keep concrete wet during transport." },
+    { id: "dump_truck", name: "Dump Truck", filename: "images/vehicles/dump_truck_50x50.png", category: "vehicles", type: "Land", material: "Diesel", rarity: "★★★☆☆", description: "A heavy construction truck with a hydraulic open-box bed for dumping bulk material." },
+    { id: "tractor", name: "Tractor", filename: "images/vehicles/tractor_50x50.png", category: "vehicles", type: "Land", material: "Diesel", rarity: "★★★☆☆", description: "An agricultural utility vehicle designed to pull heavy farm machinery and plows." },
+    { id: "forklift", name: "Forklift", filename: "images/vehicles/forklift_50x50.png", category: "vehicles", type: "Land", material: "Electric / Propane", rarity: "★★★☆☆", description: "A warehouse utility vehicle with front metal prongs to lift and move pallets." },
+    { id: "bulldozer", name: "Bulldozer", filename: "images/vehicles/bulldozer_50x50.png", category: "vehicles", type: "Land", material: "Diesel", rarity: "★★★★☆", description: "A heavy-tracked construction crawler fitted with a wide front grading blade." },
+    { id: "excavator", name: "Excavator", filename: "images/vehicles/excavator_50x50.png", category: "vehicles", type: "Land", material: "Diesel", rarity: "★★★★☆", description: "A construction vehicle featuring a rotating cab and a hinged boom arm with a shovel." },
+    { id: "steamroller", name: "Steamroller", filename: "images/vehicles/steamroller_50x50.png", category: "vehicles", type: "Land", material: "Diesel", rarity: "★★★☆☆", description: "A road compaction vehicle fitted with a heavy circular steel drum roller." },
+    { id: "golf_cart", name: "Golf Cart", filename: "images/vehicles/golf_cart_50x50.png", category: "vehicles", type: "Land", material: "Electric", rarity: "★★☆☆☆", description: "A small, lightweight open vehicle used to transport golfers and bags." },
+    { id: "gokart", name: "Go-Kart", filename: "images/vehicles/gokart_50x50.png", category: "vehicles", type: "Land", material: "Gasoline", rarity: "★★☆☆☆", description: "A miniature, open-frame four-wheeled racing kart for track amusement." },
+    { id: "bicycle", name: "Bicycle", filename: "images/vehicles/bicycle_50x50.png", category: "vehicles", type: "Land", material: "Pedal Power", rarity: "★☆☆☆☆", description: "A classic two-wheeled vehicle powered entirely by human pedaling." },
+    { id: "motorcycle", name: "Motorcycle", filename: "images/vehicles/motorcycle_50x50.png", category: "vehicles", type: "Land", material: "Gasoline", rarity: "★★☆☆☆", description: "A motorized two-wheeled vehicle designed for swift road transport." },
+    { id: "scooter", name: "Vespa Scooter", filename: "images/vehicles/scooter_50x50.png", category: "vehicles", type: "Land", material: "Gasoline", rarity: "★★☆☆☆", description: "A retro step-through motor scooter popular for urban cruising." },
+    { id: "segway", name: "Segway", filename: "images/vehicles/segway_50x50.png", category: "vehicles", type: "Land", material: "Electric", rarity: "★★★☆☆", description: "A self-balancing two-wheeled personal transporter with electric gyro guidance." },
+    { id: "tuk_tuk", name: "Tuk Tuk", filename: "images/vehicles/tuk_tuk_50x50.png", category: "vehicles", type: "Land", material: "Gasoline", rarity: "★★★☆☆", description: "A three-wheeled motorized urban taxi cabin common in tropical nations." },
+    { id: "hovercraft", name: "Hovercraft", filename: "images/vehicles/hovercraft_50x50.png", category: "vehicles", type: "Amphibious", material: "Aviation Fuel", rarity: "★★★★★", description: "An amphibious craft that glides over land or water supported by a cushion of air." },
+    { id: "speed_boat", name: "Speed Boat", filename: "images/vehicles/speed_boat_50x50.png", category: "vehicles", type: "Water", material: "Gasoline", rarity: "★★★☆☆", description: "A small motorized watercraft designed for high-speed cruising and skiing." },
+    { id: "sailboat", name: "Sailboat", filename: "images/vehicles/sailboat_50x50.png", category: "vehicles", type: "Water", material: "Wind Power", rarity: "★★★☆☆", description: "A marine vessel powered primarily by the force of wind catching canvas sails." },
+    { id: "submarine", name: "Submarine", filename: "images/vehicles/submarine_50x50.png", category: "vehicles", type: "Water", material: "Nuclear / Diesel", rarity: "★★★★★", description: "A naval vessel capable of independent underwater operations deep below the sea." },
+    { id: "cruise_ship", name: "Cruise Ship", filename: "images/vehicles/cruise_ship_50x50.png", category: "vehicles", type: "Water", material: "Heavy Fuel Oil", rarity: "★★★★★", description: "A giant ocean liner equipped with cabins and entertainment for vacation voyages." },
+    { id: "jet_ski", name: "Jet Ski", filename: "images/vehicles/jet_ski_50x50.png", category: "vehicles", type: "Water", material: "Gasoline", rarity: "★★★☆☆", description: "A small personal watercraft that the rider stands or sits on." },
+    { id: "kayak", name: "Kayak", filename: "images/vehicles/kayak_50x50.png", category: "vehicles", type: "Water", material: "Paddle Power", rarity: "★★☆☆☆", description: "A narrow, double-pointed canoe paddled manually with a double-bladed paddle." },
+    { id: "cargo_ship", name: "Cargo Ship", filename: "images/vehicles/cargo_ship_50x50.png", category: "vehicles", type: "Water", material: "Heavy Fuel Oil", rarity: "★★★★★", description: "A massive container ship designed to transport global shipping containers." },
+    { id: "helicopter", name: "Helicopter", filename: "images/vehicles/helicopter_50x50.png", category: "vehicles", type: "Air", material: "Jet Fuel", rarity: "★★★★☆", description: "An aircraft with overhead rotors capable of vertical takeoff, landing, and hovering." },
+    { id: "biplane", name: "Biplane", filename: "images/vehicles/biplane_50x50.png", category: "vehicles", type: "Air", material: "Aviation Gas", rarity: "★★★★☆", description: "A vintage propeller aircraft built with two stacked parallel wing structures." },
+    { id: "jet_fighter", name: "Fighter Jet", filename: "images/vehicles/jet_fighter_50x50.png", category: "vehicles", type: "Air", material: "Jet Fuel", rarity: "★★★★★", description: "A high-speed supersonic military aircraft designed for aerial combat." },
+    { id: "hot_air_balloon", name: "Hot Air Balloon", filename: "images/vehicles/hot_air_balloon_50x50.png", category: "vehicles", type: "Air", material: "Propane Gas", rarity: "★★★★☆", description: "A quiet, floating aircraft raised by heating air inside a large fabric envelope." },
+    { id: "blimp", name: "Blimp", filename: "images/vehicles/blimp_50x50.png", category: "vehicles", type: "Air", material: "Helium + Gas", rarity: "★★★★☆", description: "A non-rigid airship that floats using helium gas and is steered by propellers." },
+    { id: "passenger_plane", name: "Airliner", filename: "images/vehicles/passenger_plane_50x50.png", category: "vehicles", type: "Air", material: "Jet Fuel", rarity: "★★★★☆", description: "A commercial jet airliner designed to transport passengers over long distances." },
+    { id: "space_shuttle", name: "Space Shuttle", filename: "images/vehicles/space_shuttle_50x50.png", category: "vehicles", type: "Space", material: "Rocket Fuel", rarity: "★★★★★", description: "A partially reusable spacecraft designed for orbital spaceflight missions." },
+    { id: "train_locomotive", name: "Steam Train", filename: "images/vehicles/train_locomotive_50x50.png", category: "vehicles", type: "Rail", material: "Coal / Water", rarity: "★★★★☆", description: "A classic steam railway engine powered by coal-fired steam boilers." },
+    { id: "bullet_train", name: "Bullet Train", filename: "images/vehicles/bullet_train_50x50.png", category: "vehicles", type: "Rail", material: "Electricity", rarity: "★★★★★", description: "A high-speed aerodynamic train utilizing electric overhead lines." },
+    { id: "tram", name: "Tram Streetcar", filename: "images/vehicles/tram_50x50.png", category: "vehicles", type: "Rail", material: "Electricity", rarity: "★★★☆☆", description: "A street railway trolley car running on tracks embedded in public roads." },
+    { id: "cable_car", name: "Cable Car", filename: "images/vehicles/cable_car_50x50.png", category: "vehicles", type: "Rail", material: "Underground Cable", rarity: "★★★★☆", description: "A classic street transit car pulled by an underground moving steel cable." },
+    { id: "monorail", name: "Monorail", filename: "images/vehicles/monorail_50x50.png", category: "vehicles", type: "Rail", material: "Electricity", rarity: "★★★★☆", description: "A straddle-type railway running on a single elevated concrete beam track." },
+    { id: "hoverboard", name: "Hoverboard", filename: "images/vehicles/hoverboard_50x50.png", category: "vehicles", type: "Land", material: "Neon Battery", rarity: "★★★★★", description: "A futuristic self-propelling skate deck that hovers slightly above ground." },
+    { id: "unicycle", name: "Unicycle", filename: "images/vehicles/unicycle_50x50.png", category: "vehicles", type: "Land", material: "Pedal Power", rarity: "★★★☆☆", description: "A one-wheeled vehicle powered entirely by pedaling, requiring extreme balance." },
+    { id: "tandem_bicycle", name: "Tandem Bicycle", filename: "images/vehicles/tandem_bicycle_50x50.png", category: "vehicles", type: "Land", material: "Pedal Power", rarity: "★★★☆☆", description: "A bicycle designed to be pedaled by two people sitting one behind the other." },
+    { id: "penny_farthing", name: "Penny Farthing", filename: "images/vehicles/penny_farthing_50x50.png", category: "vehicles", type: "Land", material: "Pedal Power", rarity: "★★★★☆", description: "An early style of bicycle featuring a giant front wheel and tiny rear wheel." },
+    { id: "dirt_bike", name: "Dirt Bike", filename: "images/vehicles/dirt_bike_50x50.png", category: "vehicles", type: "Land", material: "Gasoline", rarity: "★★★☆☆", description: "A lightweight motorcycle equipped with rugged tires for off-road dirt racing." },
+    { id: "chopper_motorcycle", name: "Chopper", filename: "images/vehicles/chopper_motorcycle_50x50.png", category: "vehicles", type: "Land", material: "Gasoline", rarity: "★★★★☆", description: "A custom motorcycle featuring an extended front fork and reclined seat." },
+    { id: "snowmobile", name: "Snowmobile", filename: "images/vehicles/snowmobile_50x50.png", category: "vehicles", type: "Land", material: "Gasoline", rarity: "★★★☆☆", description: "A motorized vehicle designed for winter travel on snow, using front ski steering." },
+    { id: "atv", name: "Quad ATV", filename: "images/vehicles/atv_50x50.png", category: "vehicles", type: "Land", material: "Gasoline", rarity: "★★★☆☆", description: "An all-terrain vehicle with four low-pressure tires designed for rugged off-road tracks." },
+    { id: "dune_buggy", name: "Dune Buggy", filename: "images/vehicles/dune_buggy_50x50.png", category: "vehicles", type: "Land", material: "Gasoline", rarity: "★★★☆☆", description: "A recreational vehicle with oversized tires and an open roll-cage frame for sand dunes." },
+    { id: "ice_resurfacer", name: "Ice Resurfacer", filename: "images/vehicles/ice_resurfacer_50x50.png", category: "vehicles", type: "Land", material: "Electric / Propane", rarity: "★★★★☆", description: "A specialty utility vehicle used to clean and smooth the surface of ice rinks." },
+    { id: "street_sweeper", name: "Street Sweeper", filename: "images/vehicles/street_sweeper_50x50.png", category: "vehicles", type: "Land", material: "Diesel", rarity: "★★★☆☆", description: "A city sanitation truck fitted with rotating brushes for sweeping streets." },
+    { id: "tow_truck", name: "Tow Truck", filename: "images/vehicles/tow_truck_50x50.png", category: "vehicles", type: "Land", material: "Diesel", rarity: "★★★☆☆", description: "A recovery vehicle equipped with a crane and winch to impound or rescue disabled cars." },
+    { id: "tank_truck", name: "Tanker Truck", filename: "images/vehicles/tank_truck_50x50.png", category: "vehicles", type: "Land", material: "Diesel", rarity: "★★★☆☆", description: "A heavy-duty transport truck fitted with a large cylindrical tank for carrying liquids." },
+    { id: "car_transporter", name: "Car Transporter", filename: "images/vehicles/car_transporter_50x50.png", category: "vehicles", type: "Land", material: "Diesel", rarity: "★★★★☆", description: "A multi-tier carrier trailer truck designed to ship multiple automobiles." },
+    { id: "logging_truck", name: "Logging Truck", filename: "images/vehicles/logging_truck_50x50.png", category: "vehicles", type: "Land", material: "Diesel", rarity: "★★★☆☆", description: "A heavy flatbed tractor trailer configured to haul massive tree logs." },
+    { id: "armored_car", name: "Armored Car", filename: "images/vehicles/armored_car_50x50.png", category: "vehicles", type: "Land", material: "Diesel", rarity: "★★★★☆", description: "A bulletproof security van used to transport valuable cash and gold." },
+    { id: "ice_cream_truck", name: "Ice Cream Truck", filename: "images/vehicles/ice_cream_truck_50x50.png", category: "vehicles", type: "Land", material: "Gasoline", rarity: "★★★☆☆", description: "A commercial delivery van fitted with a freezer and music speaker to sell ice cream." },
+    { id: "food_truck", name: "Food Truck", filename: "images/vehicles/food_truck_50x50.png", category: "vehicles", type: "Land", material: "Gasoline", rarity: "★★★☆☆", description: "A mobile kitchen truck designed to cook and sell hot street food." },
+    { id: "camper_van", name: "Camper Van", filename: "images/vehicles/camper_van_50x50.png", category: "vehicles", type: "Land", material: "Gasoline", rarity: "★★★☆☆", description: "A self-propelled recreational vehicle equipped with sleeping and kitchen quarters." },
+    { id: "milk_float", name: "Milk Float", filename: "images/vehicles/milk_float_50x50.png", category: "vehicles", type: "Land", material: "Electric", rarity: "★★★☆☆", description: "A slow-moving electric delivery cart designed for distributing fresh milk bottles." },
+    { id: "electric_unicycle", name: "Electric Unicycle", filename: "images/vehicles/electric_unicycle_50x50.png", category: "vehicles", type: "Land", material: "Electric Battery", rarity: "★★★★☆", description: "A futuristic self-balancing electric wheel transporter ridden standing up." },
+    { id: "electric_scooter", name: "Electric Scooter", filename: "images/vehicles/electric_scooter_50x50.png", category: "vehicles", type: "Land", material: "Electric Battery", rarity: "★★☆☆☆", description: "A folding urban kick scooter equipped with an electric hub motor." },
+    { id: "rickshaw", name: "Pulled Rickshaw", filename: "images/vehicles/rickshaw_50x50.png", category: "vehicles", type: "Land", material: "Human Power", rarity: "★★★☆☆", description: "A two-wheeled passenger cart pulled manually by a runner on foot." },
+    { id: "carriage", name: "Horse Carriage", filename: "images/vehicles/carriage_50x50.png", category: "vehicles", type: "Land", material: "Horse Power", rarity: "★★★★☆", description: "A historical wheeled passenger coach pulled by harnessed horses." },
+    { id: "sleigh", name: "Sleigh", filename: "images/vehicles/sleigh_50x50.png", category: "vehicles", type: "Land", material: "Horse Power", rarity: "★★★★☆", description: "A horse-drawn winter transport sled designed to glide smoothly over ice and snow." },
+    { id: "dog_sled", name: "Dog Sled", filename: "images/vehicles/dog_sled_50x50.png", category: "vehicles", type: "Land", material: "Dog Power", rarity: "★★★★☆", description: "A wooden winter sled pulled by a team of trained sled dogs over ice." },
+    { id: "handcar", name: "Railroad Handcar", filename: "images/vehicles/handcar_50x50.png", category: "vehicles", type: "Rail", material: "Human Power", rarity: "★★★★☆", description: "A railway handcar propelled by riders pumping a central seesaw lever." },
+    { id: "trolley_bus", name: "Trolley Bus", filename: "images/vehicles/trolley_bus_50x50.png", category: "vehicles", type: "Land", material: "Overhead Electric", rarity: "★★★☆☆", description: "An electric passenger transit bus powered by twin overhead contact wires." },
+    { id: "steam_wagon", name: "Steam Wagon", filename: "images/vehicles/steam_wagon_50x50.png", category: "vehicles", type: "Land", material: "Coal / Water", rarity: "★★★★☆", description: "An early road freight utility vehicle driven by a steam engine boiler." },
+    { id: "paddle_steamer", name: "Paddle Steamer", filename: "images/vehicles/paddle_steamer_50x50.png", category: "vehicles", type: "Water", material: "Coal / Steam", rarity: "★★★★★", description: "A river boat propelled by a large steam-driven paddle wheel at the stern." },
+    { id: "rowboat", name: "Rowboat", filename: "images/vehicles/rowboat_50x50.png", category: "vehicles", type: "Water", material: "Oar Power", rarity: "★★☆☆☆", description: "A small wooden utility boat propelled manually using a pair of oars." },
+    { id: "gondola_boat", name: "Gondola", filename: "images/vehicles/gondola_boat_50x50.png", category: "vehicles", type: "Water", material: "Oar Power", rarity: "★★★★☆", description: "A traditional flat-bottomed Venetian rowing boat navigated by a gondolier." },
+    { id: "canoe", name: "Canoe", filename: "images/vehicles/canoe_50x50.png", category: "vehicles", type: "Water", material: "Paddle Power", rarity: "★★☆☆☆", description: "A lightweight open boat propelled with single-bladed paddles." },
+    { id: "jetfoil", name: "Hydrofoil", filename: "images/vehicles/jetfoil_50x50.png", category: "vehicles", type: "Water", material: "Gasoline", rarity: "★★★★☆", description: "A passenger vessel fitted with wing-like foils that lift the hull out of water at speed." },
+    { id: "catamaran", name: "Catamaran", filename: "images/vehicles/catamaran_50x50.png", category: "vehicles", type: "Water", material: "Wind Power", rarity: "★★★★☆", description: "A yacht featuring two parallel hulls, offering superior stability under sail." },
+    { id: "aircraft_carrier", name: "Aircraft Carrier", filename: "images/vehicles/aircraft_carrier_50x50.png", category: "vehicles", type: "Water", material: "Nuclear / Heavy Oil", rarity: "★★★★★", description: "A colossal naval warship designed as a seaborne runway for fighter planes." },
+    { id: "tugboat", name: "Tugboat", filename: "images/vehicles/tugboat_50x50.png", category: "vehicles", type: "Water", material: "Diesel", rarity: "★★★☆☆", description: "A powerful harbor boat designed to maneuver large ocean liners and barges." },
+    { id: "barge", name: "Barge", filename: "images/vehicles/barge_50x50.png", category: "vehicles", type: "Water", material: "Towed", rarity: "★★★☆☆", description: "A flat-bottomed cargo boat designed for carrying bulk materials on canals." },
+    { id: "lifeboat", name: "Lifeboat", filename: "images/vehicles/lifeboat_50x50.png", category: "vehicles", type: "Water", material: "Diesel", rarity: "★★★★☆", description: "A highly buoyant orange rescue craft deployed to save lives in marine emergencies." },
+    { id: "pirate_ship", name: "Galleon", filename: "images/vehicles/pirate_ship_50x50.png", category: "vehicles", type: "Water", material: "Wind Power", rarity: "★★★★★", description: "A historical multi-decked sailing ship equipped with cannons." },
+    { id: "hang_glider", name: "Hang Glider", filename: "images/vehicles/hang_glider_50x50.png", category: "vehicles", type: "Air", material: "Wind Power", rarity: "★★★★☆", description: "An unpowered glider consisting of a triangular wing sail ridden harness-down." },
+    { id: "paraglider", name: "Paraglider", filename: "images/vehicles/paraglider_50x50.png", category: "vehicles", type: "Air", material: "Wind Power", rarity: "★★★★☆", description: "A recreational foot-launched glider aircraft using a curved fabric canopy." },
+    { id: "ultralight_plane", name: "Ultralight", filename: "images/vehicles/ultralight_plane_50x50.png", category: "vehicles", type: "Air", material: "Aviation Gas", rarity: "★★★★☆", description: "A lightweight, slow-flying open-cockpit hobby airplane." },
+    { id: "glider_plane", name: "Glider", filename: "images/vehicles/glider_plane_50x50.png", category: "vehicles", type: "Air", material: "Thermal Updrafts", rarity: "★★★★☆", description: "An unpowered aerodynamic aircraft designed to soar on rising air currents." },
+    { id: "seaplane", name: "Seaplane", filename: "images/vehicles/seaplane_50x50.png", category: "vehicles", type: "Air", material: "Aviation Gas", rarity: "★★★★☆", description: "An aircraft equipped with pontoons instead of wheels to take off and land on water." },
+    { id: "chinook_helicopter", name: "Chinook", filename: "images/vehicles/chinook_helicopter_50x50.png", category: "vehicles", type: "Air", material: "Jet Fuel", rarity: "★★★★★", description: "A heavy-lift transport helicopter utilizing twin tandem main rotors." },
+    { id: "space_rover", name: "Lunar Rover", filename: "images/vehicles/space_rover_50x50.png", category: "vehicles", type: "Space", material: "Solar Battery", rarity: "★★★★★", description: "An extravehicular space rover designed to explore the surface of the Moon or Mars." },
+    { id: "space_rocket", name: "Space Rocket", filename: "images/vehicles/space_rocket_50x50.png", category: "vehicles", type: "Space", material: "Rocket Fuel", rarity: "★★★★★", description: "A vertical launch spacecraft rocket designed to deliver payloads into Earth orbit." },
+    { id: "lunar_lander", name: "Lunar Lander", filename: "images/vehicles/lunar_lander_50x50.png", category: "vehicles", type: "Space", material: "Rocket Fuel", rarity: "★★★★★", description: "A specialized descent module designed to touch down on the lunar surface." },
+    { id: "hand_truck", name: "Hand Truck", filename: "images/vehicles/hand_truck_50x50.png", category: "vehicles", type: "Land", material: "Human Power", rarity: "★★☆☆☆", description: "An L-shaped hand trolley used for tilting and rolling heavy cargo boxes." },
+    { id: "snowplow", name: "Snowplow", filename: "images/vehicles/snowplow_50x50.png", category: "vehicles", type: "Land", material: "Diesel", rarity: "★★★☆☆", description: "A heavy utility truck fitted with a front curved metal blade to clear snow." }
+];
+
+// ─── Merge all collections ────────────────────────────────────────────────────
+// Tag each item with its top-level group so filters work uniformly
+animals.forEach(a => { a.group = (a.category === "berry" || a.category === "citrus" || a.category === "melon" || a.category === "stone" || a.category === "tropical" || a.category === "pome") ? "fruits" : "animals"; });
+kitchen.forEach(k => { k.group = "kitchen"; });
+vehicles.forEach(v => { v.group = "vehicles"; });
+const allItems = [...animals, ...kitchen, ...vehicles];
 
 // Application State
 let activeFilter = "all";
 let searchQuery = "";
 let cardScale = 2.0; // multiplier (x50px)
-let spriteResolution = "75x75"; // default to deluxe!
+let spriteResolution = "50x50"; // kitchen only has 50x50
 
 // DOM Elements
 const grid = document.getElementById("animal-grid");
@@ -1606,34 +2778,38 @@ const paletteBtns = document.querySelectorAll(".palette-btn");
 function renderGallery() {
     grid.innerHTML = "";
     
-    const filteredAnimals = animals.filter(animal => {
-        // Filter by Search Query
-        const matchesSearch = animal.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                             animal.diet.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                             animal.habitat.toLowerCase().includes(searchQuery.toLowerCase());
+    const filtered = allItems.filter(item => {
+        // Search: match name, type/diet, material/habitat
+        const searchFields = [
+            item.name,
+            item.diet || item.type || "",
+            item.habitat || item.material || "",
+            item.category
+        ].join(" ").toLowerCase();
+        const matchesSearch = searchFields.includes(searchQuery.toLowerCase());
         
-        // Filter by Category
+        // Top-level category filter
         let matchesCategory = false;
         if (activeFilter === "all") {
             matchesCategory = true;
-        } else if (activeFilter === "wild") {
-            matchesCategory = (animal.category === "wild");
-        } else if (activeFilter === "domestic") {
-            matchesCategory = (animal.category === "domestic");
-        } else if (activeFilter === "predator") {
-            matchesCategory = animal.isPredator;
+        } else if (activeFilter === "animals") {
+            matchesCategory = (item.group === "animals");
+        } else if (activeFilter === "fruits") {
+            matchesCategory = (item.group === "fruits");
+        } else if (activeFilter === "kitchen") {
+            matchesCategory = (item.group === "kitchen");
         } else {
-            matchesCategory = (animal.category === activeFilter);
+            matchesCategory = (item.category === activeFilter);
         }
         
         return matchesSearch && matchesCategory;
     });
 
     // Update species counter
-    speciesCount.textContent = filteredAnimals.length;
+    speciesCount.textContent = filtered.length;
 
     // Show/hide empty state
-    if (filteredAnimals.length === 0) {
+    if (filtered.length === 0) {
         noResultsEl.style.display = "block";
         grid.style.display = "none";
         return;
@@ -1643,28 +2819,30 @@ function renderGallery() {
     }
 
     // Populate grid
-    filteredAnimals.forEach(animal => {
+    filtered.forEach(item => {
         const card = document.createElement("div");
         card.className = "card animal-card";
         card.setAttribute("tabindex", "0");
         card.setAttribute("role", "button");
-        card.setAttribute("aria-label", `View details of ${animal.name}`);
+        card.setAttribute("aria-label", `View details of ${item.name}`);
         
-        // Dynamic image dimensions
-        const sizePx = parseInt(spriteResolution) * cardScale;
-        const displaySrc = animal.filename.replace("_50x50.png", `_${spriteResolution}.png`);
+        // Dynamic image dimensions — kitchen items only have 50x50
+        const res = item.group === "kitchen" ? "50x50" : spriteResolution;
+        const sizePx = parseInt(res) * cardScale;
+        const displaySrc = item.filename.replace("_50x50.png", `_${res}.png`);
+        const badgeLabel = item.diet || item.type || item.category;
         
         card.innerHTML = `
             <div class="card-img-wrapper" style="height: ${sizePx + 40}px">
-                <img src="${displaySrc}" alt="${animal.name}" class="pixelated" style="width: ${sizePx}px; height: ${sizePx}px;">
+                <img src="${displaySrc}" alt="${item.name}" class="pixelated" style="width: ${sizePx}px; height: ${sizePx}px;">
             </div>
-            <span class="card-category">${animal.category}</span>
-            <h4>${animal.name}</h4>
-            <span class="badge-tag">${animal.diet}</span>
+            <span class="card-category">${item.group || item.category}</span>
+            <h4>${item.name}</h4>
+            <span class="badge-tag">${badgeLabel}</span>
         `;
         
         // Open modal on click or Enter key
-        const openModalAction = () => openModal(animal);
+        const openModalAction = () => openModal(item);
         card.addEventListener("click", openModalAction);
         card.addEventListener("keydown", (e) => {
             if (e.key === "Enter" || e.key === " ") {
@@ -1725,23 +2903,31 @@ themeSelector.addEventListener("change", (e) => {
 // Modal Logic
 let currentSelectedAnimal = null;
 
-function openModal(animal) {
-    currentSelectedAnimal = animal;
+function openModal(item) {
+    currentSelectedAnimal = item;
     
     // Set text elements
-    modalTitle.textContent = animal.name;
-    modalCategory.textContent = animal.isPredator ? `${animal.category.toUpperCase()} • PREDATOR` : animal.category.toUpperCase();
-    modalDescription.textContent = animal.description;
-    modalDiet.textContent = animal.diet;
-    modalHabitat.textContent = animal.habitat;
-    modalRarity.textContent = animal.rarity;
+    modalTitle.textContent = item.name;
+    const catLabel = item.isPredator ? `${item.category.toUpperCase()} • PREDATOR` : (item.group || item.category).toUpperCase();
+    modalCategory.textContent = catLabel;
+    modalDescription.textContent = item.description;
     
-    // Set image path and download link based on resolution
-    const displaySrc = animal.filename.replace("_50x50.png", `_${spriteResolution}.png`);
+    // Spec fields differ: animals use diet/habitat, kitchen uses type/material, vehicles use type/fuel
+    modalDiet.textContent = item.diet || item.type || "-";
+    modalHabitat.textContent = item.habitat || item.material || "-";
+    modalRarity.textContent = item.rarity;
+    
+    // Label the spec cards appropriately
+    document.getElementById("modal-spec-1-label").textContent = item.diet ? "Diet" : "Type";
+    document.getElementById("modal-spec-2-label").textContent = item.habitat ? "Habitat" : (item.group === "vehicles" ? "Power Source" : "Material");
+    
+    // Set image — kitchen and vehicles only have 50x50
+    const res = (item.group === "kitchen" || item.group === "vehicles") ? "50x50" : spriteResolution;
+    const displaySrc = item.filename.replace("_50x50.png", `_${res}.png`);
     modalImg.src = displaySrc;
-    modalImg.alt = `${animal.name} Sprite`;
+    modalImg.alt = `${item.name} Sprite`;
     modalDownloadLink.href = displaySrc;
-    modalDownloadLink.setAttribute("download", `${animal.id}_sprite_${spriteResolution}.png`);
+    modalDownloadLink.setAttribute("download", `${item.id}_sprite_${res}.png`);
 
     // Reset Zoom slider and display
     zoomSlider.value = 6;
@@ -1813,14 +2999,15 @@ paletteBtns.forEach(btn => {
 modalCopyBtn.addEventListener("click", () => {
     if (!currentSelectedAnimal) return;
     
-    const text = `
-Animal: ${currentSelectedAnimal.name}
-Category: ${currentSelectedAnimal.category} (${currentSelectedAnimal.isPredator ? 'Predator' : 'Non-predator'})
-Diet: ${currentSelectedAnimal.diet}
-Habitat: ${currentSelectedAnimal.habitat}
-Rarity: ${currentSelectedAnimal.rarity}
-Description: ${currentSelectedAnimal.description}
-    `.trim();
+    const item = currentSelectedAnimal;
+    const text = [
+        `Name: ${item.name}`,
+        `Category: ${item.group || item.category}`,
+        item.diet   ? `Diet: ${item.diet}`         : `Type: ${item.type}`,
+        item.habitat? `Habitat: ${item.habitat}`   : `Material: ${item.material}`,
+        `Rarity: ${item.rarity}`,
+        `Description: ${item.description}`
+    ].join("\n");
 
     navigator.clipboard.writeText(text).then(() => {
         const originalText = modalCopyBtn.textContent;

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixel Museum — Retro Animals & Fruits Gallery</title>
-    <meta name="description" content="Explore and inspect retro pixel-art animal and fruit sprites in an interactive, ultra-premium museum gallery with scaling and screen shaders.">
+    <title>Pixel Museum — Retro Animals, Fruits, Kitchen &amp; Vehicles Gallery</title>
+    <meta name="description" content="Explore and inspect retro pixel-art animal, fruit, kitchen and vehicle sprites in an interactive, ultra-premium museum gallery with scaling and screen shaders.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,17 +34,10 @@
                 
                 <div class="filter-group">
                     <button class="filter-btn active" data-category="all" id="filter-all">All</button>
-                    <!-- Animals -->
-                    <button class="filter-btn" data-category="wild" id="filter-wild">Wild</button>
-                    <button class="filter-btn" data-category="domestic" id="filter-domestic">Domestic</button>
-                    <button class="filter-btn" data-category="predator" id="filter-predator">Predators</button>
-                    <!-- Fruits -->
-                    <button class="filter-btn" data-category="berry" id="filter-berry">Berries</button>
-                    <button class="filter-btn" data-category="citrus" id="filter-citrus">Citrus</button>
-                    <button class="filter-btn" data-category="melon" id="filter-melon">Melons</button>
-                    <button class="filter-btn" data-category="stone" id="filter-stone">Stone Fruits</button>
-                    <button class="filter-btn" data-category="tropical" id="filter-tropical">Tropical</button>
-                    <button class="filter-btn" data-category="pome" id="filter-pome">Pome Fruits</button>
+                    <button class="filter-btn" data-category="animals" id="filter-animals">🦁 Animals</button>
+                    <button class="filter-btn" data-category="fruits" id="filter-fruits">🍎 Fruits</button>
+                    <button class="filter-btn" data-category="kitchen" id="filter-kitchen">🍳 Kitchen</button>
+                    <button class="filter-btn" data-category="vehicles" id="filter-vehicles">🚗 Vehicles</button>
                 </div>
             </div>
         </header>
@@ -55,11 +48,27 @@
             <aside class="sidebar-panel">
                 <div class="card panel-card">
                     <h3>Museum Directory</h3>
-                    <p class="panel-desc">A premium interactive viewer for retro 50x50 pixel-art animal and fruit sprites. Click any card to inspect stats, adjust magnification scales, and apply custom screen shaders.</p>
+                    <p class="panel-desc">A premium interactive viewer for retro 50x50 pixel-art animal, fruit, kitchen and vehicle sprites. Click any card to inspect stats, adjust magnification scales, and apply custom screen shaders.</p>
                     
                     <div class="stat-row">
-                        <span class="stat-label">Total Items</span>
-                        <span class="stat-val" id="species-count">137</span>
+                        <span class="stat-label">Showing</span>
+                        <span class="stat-val" id="species-count">532</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Animals</span>
+                        <span class="stat-val">135</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Fruits</span>
+                        <span class="stat-val">77</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Kitchen</span>
+                        <span class="stat-val">220</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Vehicles</span>
+                        <span class="stat-val">100</span>
                     </div>
                     <div class="stat-row">
                         <span class="stat-label">Format</span>
@@ -200,6 +209,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="app.js?v=8"></script>
+    <script src="app.js?v=17"></script>
 </body>
 </html>
