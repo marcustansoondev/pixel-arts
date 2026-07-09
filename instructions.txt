@@ -68,12 +68,12 @@ python3 generate_kitchen4.py
 python3 generate_kitchen5.py
 ```
 
-9. Run `generate_vehicles.py` in the workspace to build the first 50 vehicle sprites:
+9. Run `generate_vehicles.py` in the workspace to build the first 50 vehicle sprites (enhanced with shading, highlights, and details; <= 10 colors):
 ```bash
 python3 generate_vehicles.py
 ```
 
-10. Run `generate_vehicles2.py` in the workspace to build the final 50 vehicle sprites:
+10. Run `generate_vehicles2.py` in the workspace to build the final 50 vehicle sprites (enhanced with shading, highlights, and details; <= 10 colors):
 ```bash
 python3 generate_vehicles2.py
 ```
