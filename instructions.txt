@@ -28,12 +28,12 @@ If you are rebuilding the frontend code manually:
 
 To programmatically generate all 532 retro 50x50 PNG sprites and automatically build the database:
 
-1. Run `generate_all.py` in the workspace to build the animal and first 52 fruit sprites:
+1. Run `generate_fruits.py` in the workspace to build the first 52 fruit sprites (enhanced with shading, highlights, cross-sections, seeds, and characteristic details; <= 10 colors):
 ```bash
-python3 generate_all.py
+python3 generate_fruits.py
 ```
 
-2. Run `generate_fruits2.py` in the workspace to build the additional 25 fruit sprites:
+2. Run `generate_fruits2.py` in the workspace to build the additional 25 exotic fruit sprites (enhanced with shading, highlights, cross-sections, seeds, and characteristic details; <= 10 colors):
 ```bash
 python3 generate_fruits2.py
 ```
