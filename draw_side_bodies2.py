@@ -5,8 +5,9 @@ def create_sprite(filename, draw_func):
     img = Image.new("RGBA", (50, 50), (255, 255, 255, 0))
     draw = ImageDraw.Draw(img)
     draw_func(draw)
-    img.save(filename)
-    print(f"Generated {filename}")
+    target = f"images/animals/{filename}" if not filename.startswith("images/animals/") else filename
+    img.save(target)
+    print(f"Generated {target}")
 
 def draw_emu(draw):
     # Legs (grey-brown)

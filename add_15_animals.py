@@ -311,6 +311,9 @@ def main():
     if idx != -1:
         js_arr = []
         for a in new_animals:
+            if f'id: "{a["id"]}"' in content:
+                print(f"Animal {a['id']} already exists in app.js, skipping database append.")
+                continue
             js_str = f"""    {{
         id: "{a['id']}",
         name: "{a['name']}",
@@ -324,6 +327,10 @@ def main():
     }}"""
             js_arr.append(js_str)
             
+        if not js_arr:
+            print("No new animals needed to be added to app.js database.")
+            return
+
         last_obj_end = content.rfind("}", 0, idx)
         prefix = ""
         if last_obj_end != -1:

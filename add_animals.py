@@ -61,21 +61,28 @@ def generate_sprite(animal_id):
                 rx = 9 - x
                 draw.rectangle([rx*5, y*5, rx*5+4, y*5+4], fill=color)
                 
-    img.save(f"{animal_id}_50x50.png")
-    print(f"Generated {animal_id}_50x50.png")
+    out_dir = "images/animals"
+    os.makedirs(out_dir, exist_ok=True)
+    filepath = os.path.join(out_dir, f"{animal_id}_50x50.png")
+    img.save(filepath)
+    print(f"Generated {filepath}")
 
 def main():
     for a in new_animals:
-        a["filename"] = f"{a['id']}_50x50.png"
+        a["filename"] = f"images/animals/{a['id']}_50x50.png"
         generate_sprite(a['id'])
 
     with open("app.js", "r") as f:
         content = f.read()
 
-    idx = content.rfind("];")
+    app_state_idx = content.find("// Application State")
+    idx = content.rfind("];", 0, app_state_idx)
     if idx != -1:
         js_arr = []
         for a in new_animals:
+            if f'id: "{a["id"]}"' in content:
+                print(f"Animal {a['id']} already exists in app.js, skipping database append.")
+                continue
             js_str = f"""    {{
         id: "{a['id']}",
         name: "{a['name']}",
@@ -88,6 +95,10 @@ def main():
         description: "{a['description']}"
     }}"""
             js_arr.append(js_str)
+            
+        if not js_arr:
+            print("No new animals needed to be added to app.js database.")
+            return
             
         # check if we need a leading comma
         last_obj_end = content.rfind("}", 0, idx)
@@ -103,7 +114,7 @@ def main():
         
         with open("app.js", "w") as f:
             f.write(new_content)
-        print("app.js successfully updated with 25 new animals.")
+        print("app.js successfully updated with new animals.")
     else:
         print("Error: Could not find closing brace of animals array in app.js")
 

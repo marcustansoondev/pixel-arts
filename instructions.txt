@@ -58,6 +58,19 @@ python3 generate_75x75_all.py
 
 ---
 
+## Step 2c: Generate the Bold Flat 100x100 Sprites
+
+To generate the native 100x100 sprites (featuring vivid layered fills, 10-band vertical gradient shading, thick bold outlines, and palettes limited to 10–25 unique colors):
+
+Run `generate_100x100_all.py` in the workspace:
+```bash
+python3 generate_100x100_all.py
+```
+
+This generates all 137 sprites completely from scratch at 100x100 resolution — not upscaled from the 50x50 or 75x75 versions. Each sprite is post-processed to enforce a palette of exactly 10–25 distinct non-transparent colors via vertical gradient shading and FASTOCTREE quantization.
+
+---
+
 ## Step 3: Run the Web Server
 
 Start a background Python HTTP server on port 8080 to serve the directory:
@@ -70,7 +83,7 @@ Open your browser or Web Preview on port 8080 to view, search, scale, and filter
 
 ## Step 4: Package the Files into a ZIP Archive
 
-Run the following command to compress the HTML page, CSS styles, JavaScript logic, generator scripts, instructions text, and all 137 sprites (both 50x50 and 75x75 versions) together:
+Run the following command to compress the HTML page, CSS styles, JavaScript logic, generator scripts, instructions text, and all 137 sprites (50x50, 75x75, and 100x100 versions) together:
 ```bash
 python3 -c "import zipfile, glob; zipf = zipfile.ZipFile('pixel_zoo.zip', 'w'); [zipf.write(f) for f in ['index.html', 'styles.css', 'app.js', 'instructions.txt'] + glob.glob('*.py') + glob.glob('images/animals/*.png') + glob.glob('images/fruits/*.png')]; zipf.close()"
 ```
