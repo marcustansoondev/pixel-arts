@@ -43,42 +43,48 @@ python3 generate_fruits2.py
 python3 generate_animals2.py
 ```
 
-4. Run `generate_kitchen.py` in the workspace to build the first 50 kitchen sprites:
+4. **Replace with Twemoji Art:** Download the Twemoji asset library and run `generate_twemoji_animals.py` to completely replace all 135 animal sprites with high-quality, sharp, thick-outlined 10-color pixel art suitable for coloring games:
+```bash
+wget -qO twemoji.zip https://github.com/twitter/twemoji/archive/refs/tags/v14.0.2.zip && unzip -q twemoji.zip
+python3 generate_twemoji_animals.py
+```
+
+5. Run `generate_kitchen.py` in the workspace to build the first 50 kitchen sprites:
 ```bash
 python3 generate_kitchen.py
 ```
 
-5. Run `generate_kitchen2.py` in the workspace to build the additional 20 kitchen sprites:
+6. Run `generate_kitchen2.py` in the workspace to build the additional 20 kitchen sprites:
 ```bash
 python3 generate_kitchen2.py
 ```
 
-6. Run `generate_kitchen3.py` in the workspace to build another 50 kitchen sprites:
+7. Run `generate_kitchen3.py` in the workspace to build another 50 kitchen sprites:
 ```bash
 python3 generate_kitchen3.py
 ```
 
-7. Run `generate_kitchen4.py` in the workspace to build another 50 kitchen sprites:
+8. Run `generate_kitchen4.py` in the workspace to build another 50 kitchen sprites:
 ```bash
 python3 generate_kitchen4.py
 ```
 
-8. Run `generate_kitchen5.py` in the workspace to build another 50 kitchen sprites:
+9. Run `generate_kitchen5.py` in the workspace to build another 50 kitchen sprites:
 ```bash
 python3 generate_kitchen5.py
 ```
 
-9. **Apply Realistic Details to Kitchen Sprites:** Run `enhance_kitchen.py` to algorithmically apply 3D shading, realistic lighting, and strict 10-color quantization to all 220 kitchen items:
+10. **Apply Realistic Details to Kitchen Sprites:** Run `enhance_kitchen.py` to algorithmically apply 3D shading, realistic lighting, and strict 10-color quantization to all 220 kitchen items:
 ```bash
 python3 enhance_kitchen.py
 ```
 
-10. Run `generate_vehicles.py` in the workspace to build the first 50 vehicle sprites (enhanced with shading, highlights, and details; <= 10 colors):
+11. Run `generate_vehicles.py` in the workspace to build the first 50 vehicle sprites (enhanced with shading, highlights, and details; <= 10 colors):
 ```bash
 python3 generate_vehicles.py
 ```
 
-11. Run `generate_vehicles2.py` in the workspace to build the final 50 vehicle sprites (enhanced with shading, highlights, and details; <= 10 colors):
+12. Run `generate_vehicles2.py` in the workspace to build the final 50 vehicle sprites (enhanced with shading, highlights, and details; <= 10 colors):
 ```bash
 python3 generate_vehicles2.py
 ```
