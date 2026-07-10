@@ -2627,6 +2627,7 @@ const kitchen = [
     { id: "bottle_capper", name: "Bottle Capper", filename: "images/kitchen/bottle_capper_50x50.png", category: "kitchen", type: "Tool", material: "Red Metal + Steel", rarity: "★★★★☆", description: "A twin-lever hand capper tool designed to lock caps onto glass bottles." },
     { id: "wine_rack", name: "Wine Rack", filename: "images/kitchen/wine_rack_50x50.png", category: "kitchen", type: "Storage", material: "Wood", rarity: "★★★☆☆", description: "A small wooden storage display rack for organizing wine bottles." },
     { id: "wine_thermometer", name: "Wine Thermometer", filename: "images/kitchen/wine_thermometer_50x50.png", category: "kitchen", type: "Tool", material: "Silver Metal", rarity: "★★★★☆", description: "A snap-on thermometer band designed to monitor wine bottle temperatures." },
+    { id: "ice_scoop", name: "Ice Scoop", filename: "images/kitchen/ice_scoop_50x50.png", category: "kitchen", type: "Tool", material: "Wood + Steel", rarity: "★★★☆☆", description: "A metal shovel-shaped scoop with a wooden handle for scooping ice." }
 ];
 
 // ─── Vehicles Dataset ────────────────────────────────────────────────────────
@@ -2738,7 +2739,20 @@ const vehicles = [
 animals.forEach(a => { a.group = (a.category === "berry" || a.category === "citrus" || a.category === "melon" || a.category === "stone" || a.category === "tropical" || a.category === "pome") ? "fruits" : "animals"; });
 kitchen.forEach(k => { k.group = "kitchen"; });
 vehicles.forEach(v => { v.group = "vehicles"; });
-const allItems = [...animals, ...kitchen, ...vehicles];
+const allItems = [...animals, ...kitchen, ...vehicles,
+    {
+        id: "crow",
+        name: "Crow",
+        filename: "images/animals/crow_50x50.png",
+        category: "wild",
+        isPredator: true,
+        group: "animals",
+        diet: "Omnivore",
+        habitat: "Everywhere",
+        rarity: "★★☆☆☆",
+        description: "Highly intelligent black birds capable of problem-solving and recognizing human faces."
+    }
+];
 
 // Application State
 let activeFilter = "all";

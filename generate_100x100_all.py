@@ -2032,6 +2032,22 @@ def main():
         except Exception as e:
             print(f"  ERROR {name}: {e}")
     print(f"  Fruits: {ok_f}/{len(FRUIT_FUNCS)}")
+
+    print("=== Checking and generating fallback 100x100 sprites ===")
+    import glob
+    fallback_count = 0
+    for folder in ["animals", "fruits"]:
+        for f50 in glob.glob(f"images/{folder}/*_50x50.png"):
+            f100 = f50.replace("_50x50.png", "_100x100.png")
+            if not os.path.exists(f100):
+                try:
+                    img = Image.open(f50).convert("RGBA")
+                    img_100 = img.resize((100, 100), Image.Resampling.NEAREST)
+                    img_100.save(f100)
+                    fallback_count += 1
+                except Exception as e:
+                    print(f"  ERROR generating fallback for {f50}: {e}")
+    print(f"  Generated {fallback_count} fallback 100x100 sprites.")
     print("Done!")
 
 if __name__ == "__main__":
