@@ -1,6 +1,6 @@
 # Pixel Museum Setup Instructions
 
-This document explains how to reconstruct this interactive Pixel Museum web application gallery from scratch, generate the 135 procedural animal sprites, 77 fruit sprites, 220 kitchen sprites, and 100 vehicle sprites (totaling 532 items), and host it locally in a new environment or chat session.
+This document explains how to reconstruct this interactive Pixel Museum web application gallery from scratch, generate the 135 procedural animal sprites, 77 fruit sprites, 220 kitchen sprites, and 150 vehicle sprites (totaling 582 items), and host it locally in a new environment or chat session.
 
 ---
 
@@ -87,6 +87,11 @@ python3 generate_vehicles.py
 12. Run `generate_vehicles2.py` in the workspace to build the final 50 vehicle sprites (enhanced with shading, highlights, and details; <= 10 colors):
 ```bash
 python3 generate_vehicles2.py
+```
+
+13. Run `generate_vehicles3.py` in the workspace to build another 50 unique vehicle sprites (extensively enhanced with multi-layered details, shading, wheel rims, window highlights, and realistic geometry; <= 10 colors):
+```bash
+python3 generate_vehicles3.py
 ```
 
 The PNG sprites will be located in `images/animals/`, `images/fruits/`, `images/kitchen/`, and `images/vehicles/`.
