@@ -54,6 +54,11 @@ wget -qO twemoji.zip https://github.com/twitter/twemoji/archive/refs/tags/v14.0.
 python3 generate_twemoji_animals.py
 ```
 
+4b. **Fix & Enhance All Animal Sprites:** Run `enhance_animals.py` to replace 50 placeholder/incorrect animal sprites with unique hand-crafted pixel art (armadillo, camel, capybara, chameleon, chimpanzee, crow, donkey, emu, falcon, ferret, iguana, lemur, moose, opossum, platypus, red_panda, walrus, weasel, ant, spider, stingray, jellyfish, seahorse, starfish, cuttlefish, eel, gecko, komodo_dragon, salamander, toad, dragonfly, grasshopper, mantis, firefly, echidna, mole, mongoose, meerkat, anteater, pangolin, tapir, okapi, hyena, bandicoot, gopher, groundhog, prairie_dog, wombat, quokka, tasmanian_devil), and apply clean cell-shading with black outlines (no dithering noise) to all 135 50×50 animal images (≤ 10 colors each):
+```bash
+python3 enhance_animals.py
+```
+
 5. Run `generate_kitchen.py` in the workspace to build the first 50 kitchen sprites:
 ```bash
 python3 generate_kitchen.py
