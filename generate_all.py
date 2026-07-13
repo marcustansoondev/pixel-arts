@@ -53,7 +53,7 @@ def replacer(match):
     prefix = match.group(1)
     path = match.group(2)
     suffix = match.group(3)
-    if not any(path.startswith(p) for p in ['images/animals/', 'images/fruits/', 'images/kitchen/', 'images/vehicles/']):
+    if not path.startswith('images/'):
         return f'{prefix}images/animals/{path}{suffix}'
     return match.group(0)
 

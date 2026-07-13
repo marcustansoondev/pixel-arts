@@ -1323,7 +1323,7 @@ def generate_all():
                 if a < 255:
                     pixels[x,y] = (0,0,0,0)
 
-        filename = f"images/vehicles/{name}.png"
+        filename = f"images/vehicles/{name}_50x50.png"
         img.save(filename)
         print(f"Generated {filename}")
 

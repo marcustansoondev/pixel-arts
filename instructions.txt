@@ -28,6 +28,13 @@ If you are rebuilding the frontend code manually:
 
 To programmatically generate all 932 retro 50x50 PNG sprites and automatically build the database:
 
+*(Note: Do not delete the `images/` directory before generation, as it contains essential base sprites that are not procedurally generated!)*
+
+0. **Install Python Image Library (Pillow):**
+```bash
+pip install Pillow
+```
+
 1. Run `generate_all.py` in the workspace to execute the base animal pipeline (generating the first 85 animal sprites and the first 52 fruit sprites, resolving derived layers, and updating the database):
 ```bash
 python3 generate_all.py
