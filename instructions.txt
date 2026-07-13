@@ -50,18 +50,6 @@ python3 generate_fruits2.py
 python3 generate_fruits3.py
 ```
 
-2c. **Fix & Improve All Fruit Sprites:** Run `enhance_fruits_v2.py` to comprehensively fix all 50×50 fruit sprites. This script:
-   - **Replaces 27 bland/sparse fruit images** (salak, tamarind, bergamot, bilberry, breadfruit, cherimoya, cherry, custard_apple, elderberry, grape, langsat, monstera_deliciosa, physalis, pineapple, rambutan, soursop, starfruit, barberry, black_currant, cloudberry, mulberry, red_currant, banana, blackberry, boysenberry, marionberry, raspberry) with detailed hand-crafted pixel art featuring realistic botanical details
-   - **Quantizes all 127 images** to ≤ 10 colors each (no dithering noise, no added outlines), making them clean and perfectly suited for a kids' pixel coloring game
-```bash
-python3 enhance_fruits_v2.py
-```
-
-2d. **De-noise All Fruit Sprites:** Run `denoise_fruits.py` to remove any remaining noisy "sprinkle" pixels from all 50×50 fruit images. The script detects isolated pixels that differ from all their neighbors and replaces them with the most common neighbor color (3 passes), then re-quantizes to ≤ 10 colors:
-```bash
-python3 denoise_fruits.py
-```
-
 3. Run `generate_animals2.py` in the workspace to build the additional 50 animal sprites:
 ```bash
 python3 generate_animals2.py
@@ -73,13 +61,9 @@ wget -qO twemoji.zip https://github.com/twitter/twemoji/archive/refs/tags/v14.0.
 python3 generate_twemoji_animals.py
 ```
 
-4b. **Fix, Improve & Deduplicate All Animal Sprites:** Run `enhance_animals_v2.py` to comprehensively fix all 50×50 animal sprites. This script:
-   - **Fixes 10 groups of duplicate images** (alligator/crocodile, beetle/ladybug, beluga/narwhal/whale, bison/yak, cheetah/jaguar/leopard/panther, chipmunk/squirrel, dugong/manatee/sea_lion/seal, goose/swan, hedgehog/porcupine, ostrich/pelican/puffin) — each animal now has unique, distinguishing pixel art
-   - **Replaces 12 bland/placeholder sprites** (ant, camel, crow, firefly, gecko, lemur, pangolin, salamander, seahorse, starfish, stingray, tapir) with realistic detailed art
-   - **Improves 26 additional animals** (jellyfish, cuttlefish, eel, komodo_dragon, toad, dragonfly, grasshopper, mantis, echidna, mole, mongoose, meerkat, anteater, okapi, hyena, bandicoot, gopher, groundhog, prairie_dog, wombat, quokka, tasmanian_devil, armadillo, capybara, chameleon, chimpanzee, donkey, emu, falcon, ferret, iguana, moose, opossum, platypus, red_panda, walrus, weasel, spider) with hand-crafted pixel art including realistic species-specific details
-   - **Quantizes all 135 images** to ≤ 10 colors each (no dithering noise, no added outlines), making them clean and perfectly suited for a kids' pixel coloring game
+4b. **Fix & Enhance All Animal Sprites:** Run `enhance_animals.py` to replace 50 placeholder/incorrect animal sprites with unique hand-crafted pixel art (armadillo, camel, capybara, chameleon, chimpanzee, crow, donkey, emu, falcon, ferret, iguana, lemur, moose, opossum, platypus, red_panda, walrus, weasel, ant, spider, stingray, jellyfish, seahorse, starfish, cuttlefish, eel, gecko, komodo_dragon, salamander, toad, dragonfly, grasshopper, mantis, firefly, echidna, mole, mongoose, meerkat, anteater, pangolin, tapir, okapi, hyena, bandicoot, gopher, groundhog, prairie_dog, wombat, quokka, tasmanian_devil), and apply clean cell-shading with black outlines (no dithering noise) to all 135 50×50 animal images (≤ 10 colors each):
 ```bash
-python3 enhance_animals_v2.py
+python3 enhance_animals.py
 ```
 
 5. Run `generate_kitchen.py` in the workspace to build the first 50 kitchen sprites:
@@ -135,6 +119,11 @@ python3 generate_vehicles3.py
 14. Run `generate_vehicles4.py` in the workspace to build another 50 unique vehicle sprites (hyper-detailed with intricate mechanical textures, 3D shading, complex custom highlights, and highly realistic geometry; <= 10 colors):
 ```bash
 python3 generate_vehicles4.py
+```
+
+14b. Run `generate_vehicles_extra.py` in the workspace to build another 100 unique vehicle sprites (stylized, highly detailed with realistic components like windows and lights, non-noisy; <= 10 colors):
+```bash
+python3 generate_vehicles_extra.py
 ```
 
 15. Run `generate_electronics.py`, `generate_electronics2.py`, and `generate_electronics3.py` in the workspace to build the 250 electronics sprites (highly detailed with realistic 3D shading, reflection glares, and drop shadows; <= 10 colors). Then, run `enhance_electronics_details.py` to apply clean solid colors (without dithering noise) and thick black outlines suitable for pixel coloring art to batches 2 and 3:
