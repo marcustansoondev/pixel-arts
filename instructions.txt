@@ -1,6 +1,6 @@
 # Pixel Museum Setup Instructions
 
-This document explains how to reconstruct this interactive Pixel Museum web application gallery from scratch, generate the 135 procedural animal sprites, 127 fruit sprites, 200 vegetable sprites, 270 kitchen sprites, 350 vehicle sprites, 300 electronics sprites, 300 clothing sprites, and 202 weather sprites (totaling 1884 items), and host it locally in a new environment or chat session.
+This document explains how to reconstruct this interactive Pixel Museum web application gallery from scratch, generate the 135 procedural animal sprites, 127 fruit sprites, 200 vegetable sprites, 270 kitchen sprites, 350 vehicle sprites, 300 electronics sprites, 300 clothing sprites, 202 weather sprites, and 200 building sprites (totaling 2084 items), and host it locally in a new environment or chat session.
 
 ---
 
@@ -180,6 +180,12 @@ python3 generate_weather_variants.py
 python3 enhance_weather.py
 ```
 
+20. Run `generate_buildings.py` and `enhance_buildings_details.py` in the workspace to build the 200 unique building sprites (generated from architectural variants; <= 10 colors, kid-friendly thick outlines, and realistic cell shading):
+```bash
+python3 generate_buildings.py
+python3 enhance_buildings_details.py
+```
+
 ---
 
 ## Step 2b: Generate the High-Quality 75x75 Sprites
@@ -218,7 +224,7 @@ Open your browser or Web Preview on port 8080 to view, search, scale, and filter
 
 Run the following command to compress the HTML page, CSS styles, JavaScript logic, generator scripts, instructions text, and all sprites together:
 ```bash
-python3 -c "import zipfile, glob; zipf = zipfile.ZipFile('pixel_zoo.zip', 'w'); [zipf.write(f) for f in ['index.html', 'styles.css', 'app.js', 'instructions.txt'] + glob.glob('*.py') + glob.glob('images/animals/*.png') + glob.glob('images/fruits/*.png') + glob.glob('images/vegetables/*.png') + glob.glob('images/kitchen/*.png') + glob.glob('images/vehicles/*.png') + glob.glob('images/electronics/*.png') + glob.glob('images/clothing/*.png') + glob.glob('images/weather/*.png')]; zipf.close()"
+python3 -c "import zipfile, glob; zipf = zipfile.ZipFile('pixel_zoo.zip', 'w'); [zipf.write(f) for f in ['index.html', 'styles.css', 'app.js', 'instructions.txt'] + glob.glob('*.py') + glob.glob('images/animals/*.png') + glob.glob('images/fruits/*.png') + glob.glob('images/vegetables/*.png') + glob.glob('images/kitchen/*.png') + glob.glob('images/vehicles/*.png') + glob.glob('images/electronics/*.png') + glob.glob('images/clothing/*.png') + glob.glob('images/weather/*.png') + glob.glob('images/buildings/*.png')]; zipf.close()"
 ```
 This produces `pixel_zoo.zip` which contains the complete museum.
 
